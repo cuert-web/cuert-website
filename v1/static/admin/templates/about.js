@@ -19,7 +19,7 @@ var AboutPreview = createClass({
 
     var link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'path/to/css/file.css';
+    link.href = 'v1/resources/_gen/assets/scss/scss/shared/shared.scss';
     document.head.appendChild(link);
     return h('div',{},
       // Intro Section
