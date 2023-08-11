@@ -1,10 +1,11 @@
 {
  "compilerOptions": {
   "baseUrl": ".",
-  "paths": {
-   "*": [
-    "..\\themes\\up-business-theme\\assets\\*"
-   ]
-  }
+ "paths": {
+  "*": [
+   "..\\themes\\up-business-theme\\assets\\*",
+   "path\\to\\scss\\file\\*"
+  ]
+ }
  }
 }
