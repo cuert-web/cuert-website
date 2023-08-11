@@ -4,7 +4,7 @@
  "paths": {
   "*": [
    "..\\themes\\up-business-theme\\assets\\*",
-   "path\\to\\scss\\file\\*"
+   "v1/resources/_gen/assets/scss/scss/shared/*"
   ]
  }
  }
