@@ -1,0 +1,118 @@
+<!--
+Source: https://github.com/WilliamDavidHarrison/coming-soon
+Licence: https://github.com/WilliamDavidHarrison/coming-soon/blob/main/LICENSE
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        // Set the date to count down to (September 1, 2023)
+        const targetDate = new Date('2023-09-01T00:00:00');
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeDifference = targetDate - now;
+
+            if (timeDifference <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown').textContent = 'We\'re here!';
+            } else {
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                document.getElementById('countdown').textContent = `${days} Days ${hours} Hours ${minutes} Mins ${seconds} Secs`;
+            }
+        }
+    </script>
+    <style>
+        /* Additional CSS for the video background */
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Adjust this if needed */
+            overflow: hidden;
+        }
+
+        .background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Additional CSS for the video background */
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Adjust this if needed */
+            overflow: hidden;
+        }
+
+        .background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #countdown {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <title>Coming Soon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+    <div class="container">
+        <div class="background">
+            <video src="background.mp4" muted autoplay loop></video>
+        </div>
+
+        <h1>Coming Soon</h1>
+
+        <div id="countdown"></div>
+        <br>
+        <br>
+        <br>
+        <div class="sm">
+            <a href="https://www.facebook.com/ShellEcoMarathonCUT"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/CUEcoRacingTeam"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/cairo-university-eco-racing-team/mycompany/"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/cuecoracingteam/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
