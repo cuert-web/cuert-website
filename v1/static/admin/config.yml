@@ -9,7 +9,7 @@
 #
 
 backend:
-  name: github
+  name: git-gateway
   repo: mo-gaafar/cuert-frontend
   branch: main
   publish_mode: editorial_workflow
@@ -40,7 +40,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-  
+
   - name: "Team Members"
     label: "Team Members"
     folder: "content/team"
@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Social", name: "social", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-  
+
   - name: "Sponsors"
     label: "Sponsors"
     folder: "content/sponsors"
@@ -71,13 +71,13 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
-      - name: "general"
-        label: "Site Settings"
+      - label: "Site Settings"
+        name: "general"
         file: "config.yaml"
         extension: yaml
         description: "General Site Settings"
-        - label: "Global title"
         fields:
+          - label: "Global title"
             name: "title"
             widget: "string"
 
@@ -128,7 +128,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: "string"
 
           - label: "linkedin"
-            name: "params.social.handles"
+            name: "params.social.handles.linkedIn"
             widget: "list"
             fields:
               - label: "Name"
@@ -139,7 +139,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "string"
 
           - label: "instagram"
-            name: "params.social.handles"
+            name: "params.social.handles.instagram"
             widget: "list"
             fields:
               - label: "Name"
@@ -150,7 +150,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "string"
 
           - label: "facebook"
-            name: "params.social.handles"
+            name: "params.social.handles.facebook"
             widget: "list"
             fields:
               - label: "Name"
@@ -161,7 +161,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "string"
 
           - label: "twitter"
-            name: "params.social.handles"
+            name: "params.social.handles.twitter"
             widget: "list"
             fields:
               - label: "Name"
@@ -192,7 +192,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: "string"
 
           - label: "Home"
-            name: "menus.main"
+            name: "menus.main.home"
             widget: "list"
             fields:
               - label: "Name"
@@ -206,7 +206,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "number"
 
           - label: "How we work"
-            name: "menus.main"
+            name: "menus.main.how-we-work"
             widget: "list"
             fields:
               - label: "Name"
@@ -220,7 +220,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "number"
 
           - label: "Our team"
-            name: "menus.main"
+            name: "menus.main.our-team"
             widget: "list"
             fields:
               - label: "Name"
@@ -234,7 +234,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "number"
 
           - label: "Achievements"
-            name: "menus.main"
+            name: "menus.main.achievements"
             widget: "list"
             fields:
               - label: "Name"
@@ -248,7 +248,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "number"
 
           - label: "News"
-            name: "menus.main"
+            name: "menus.main.news"
             widget: "list"
             fields:
               - label: "Name"
@@ -262,7 +262,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "number"
 
           - label: "Contact Us"
-            name: "menus.buttons"
+            name: "menus.buttons.contact-us"
             widget: "list"
             fields:
               - label: "Name"
