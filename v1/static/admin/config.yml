@@ -1,0 +1,279 @@
+#
+#. This config file adds support for Netlify CMS, exposed at /admin on the running site.
+# In order to use this on your site,
+#. 1) replace instances of "exampleSite/......" with the appropriate paths, relative from repository root.
+#. 2) replace repo path in `backend` settings, and set branch to master.
+#  3) Optionally enable the [editor workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode) which uses PRs for content changes
+#  4) Optionally enable [open authoring](https://www.netlifycms.org/docs/open-authoring/) for community sites, which requires #3
+#
+#
+
+backend:
+  name: github
+  repo: mo-gaafar/cuert-frontend
+  branch: main
+  publish_mode: editorial_workflow
+  site_domain: https://cuecoracing.com
+  display_url: https://cuecoracing.com
+  logo_url: https://cuecoracing.com/favicon.ico
+
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: "images"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "Blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    folder: "content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "Achievements"
+    label: "Achievements"
+    folder: "content/achievements"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "Team Members"
+    label: "Team Members"
+    folder: "content/team"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Bio", name: "bio", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Social", name: "social", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "Sponsors"
+    label: "Sponsors"
+    folder: "content/sponsors"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Settings"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "config.yaml"
+        extension: yaml
+        description: "General Site Settings"
+        - label: "Global title"
+        fields:
+            name: "title"
+            widget: "string"
+
+          - label: "Site Url"
+            name: "baseURL"
+            widget: "string"
+
+          - label: "Theme"
+            name: "theme"
+            widget: "hidden"
+            default: "up-business-theme"
+
+          - label: "Language Code"
+            name: "languageCode"
+            widget: "hidden"
+            default: "en-us"
+
+          - label: "title"
+            name: "params.title"
+            widget: "string"
+
+          - label: "description"
+            name: "params.description"
+            widget: "string"
+
+          - label: "images"
+            name: "params.images"
+            widget: "list"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+
+          - label: "logo"
+            name: "params.logo"
+            widget: "string"
+
+          - label: "themeColor"
+            name: "params.favicons.themeColor"
+            widget: "string"
+
+          - label: "backgroundColor"
+            name: "params.favicons.backgroundColor"
+            widget: "string"
+
+          - label: "faviconColor"
+            name: "params.favicons.faviconColor"
+            widget: "string"
+
+          - label: "linkedin"
+            name: "params.social.handles"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+
+          - label: "instagram"
+            name: "params.social.handles"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+
+          - label: "facebook"
+            name: "params.social.handles"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+
+          - label: "twitter"
+            name: "params.social.handles"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+
+          - label: "location"
+            name: "location"
+            widget: "list"
+            fields:
+              - label: "Location"
+                name: "location"
+                widget: "string"
+
+          - label: "contact"
+            name: "contact"
+            widget: "list"
+            fields:
+              - label: "Contact"
+                name: "contact"
+                widget: "string"
+
+          - label: "copyright"
+            name: "params.copyright"
+            widget: "string"
+
+          - label: "Home"
+            name: "menus.main"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Weight"
+                name: "weight"
+                widget: "number"
+
+          - label: "How we work"
+            name: "menus.main"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Weight"
+                name: "weight"
+                widget: "number"
+
+          - label: "Our team"
+            name: "menus.main"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Weight"
+                name: "weight"
+                widget: "number"
+
+          - label: "Achievements"
+            name: "menus.main"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Weight"
+                name: "weight"
+                widget: "number"
+
+          - label: "News"
+            name: "menus.main"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Weight"
+                name: "weight"
+                widget: "number"
+
+          - label: "Contact Us"
+            name: "menus.buttons"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Weight"
+                name: "weight"
+                widget: "number"
+              - label: "Pre"
+                name: "pre"
+                widget: "string"

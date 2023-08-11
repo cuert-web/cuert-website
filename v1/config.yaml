@@ -1,0 +1,88 @@
+baseURL: "/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "CU Eco-Racing Team"
+
+googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Cairo University Eco-Racing Team"
+  description: "Cairo University Eco-Racing Team is a student activity that aims to design and manufacture a single-seat, open-wheeled, eco-friendly vehicle to compete in the Shell Eco-Marathon competition."
+
+  logo: "logo.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    instagram: "https://www.instagram.com/cuecoracingteam/"
+    facebook: "https://www.facebook.com/ShellEcoMarathonCUT"
+    twitter: "https://twitter.com/CUEcoRacingTeam"
+    linkedin: "https://www.linkedin.com/company/cairo-university-eco-racing-team/mycompany/"
+
+  location:
+    - "Faculty of Engineering , Cairo University Giza - Egypt"
+
+  contact:
+    - "cairo.university.eco.racing.team@gmail.com"
+    - "+201014569572"
+
+  copyright: "© 2023 Cairo University Eco-Racing Team"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "How we work"
+      url: "/#"
+      weight: 2
+
+    - name: "Our team"
+      url: "/#"
+      weight: 3
+
+    - name: "Achievements"
+      url: "/#"
+      weight: 4
+
+    - name: "News"
+      url: "/blog"
+      weight: 5
+
+  buttons:
+    - name: "Contact Us"
+      url: "/#"
+      weight: 5
+      pre: "btn btn-primary text-light"
+
+  footer:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "How we work"
+      url: "/#"
+      weight: 2
+
+    - name: "Our team"
+      url: "/#"
+      weight: 3
+
+    - name: "Achievements"
+      url: "/#"
+      weight: 4
+
+    - name: "News"
+      url: "/blog"
+      weight: 5
+
+taxonomies:
+  series: "series"
+  tags: "tags"
