@@ -17,6 +17,10 @@ var AboutPreview = createClass({
     var contact = entry.getIn(['data', 'contact']);
     var bg = this.props.widgetsFor('intro').getIn(['widgets', 'background']).props.value;
 
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'path/to/css/file.css';
+    document.head.appendChild(link);
     return h('div',{},
       // Intro Section
       h('header', { "class":"masthead", 
