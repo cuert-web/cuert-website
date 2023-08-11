@@ -1,3 +1,8 @@
+<!--
+Source: https://github.com/WilliamDavidHarrison/coming-soon
+Licence: https://github.com/WilliamDavidHarrison/coming-soon/blob/main/LICENSE
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +11,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script>
+        // Set the date to count down to (September 1, 2023)
+        const targetDate = new Date('2023-09-01T00:00:00');
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeDifference = targetDate - now;
+
+            if (timeDifference <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown').textContent = 'We\'re here!';
+            } else {
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                document.getElementById('countdown').textContent = `${days} Days ${hours} Hours ${minutes} Mins ${seconds} Secs`;
+            }
+        }
+    </script>
     <style>
         /* Global styles */
         body {
@@ -73,10 +102,6 @@
         }
     </style>
 
-    <script>
-        // Your existing countdown script...
-    </script>
-
     <title>Coming Soon</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -84,6 +109,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+<!DOCTYPE html>
+<html lang="en">
+
 
 <body>
     <div class="container">
@@ -94,7 +122,9 @@
         <h1>Coming Soon</h1>
 
         <div id="countdown"></div>
-
+        <br>
+        <br>
+        <br>
         <div class="sm">
             <a href="https://www.facebook.com/ShellEcoMarathonCUT"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com/CUEcoRacingTeam"><i class="fab fa-twitter"></i></a>
