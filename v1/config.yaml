@@ -1,4 +1,4 @@
-baseURL: "/"
+baseURL: "https://cuecoracing.netlify.app/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
