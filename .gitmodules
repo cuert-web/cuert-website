@@ -1,0 +1,3 @@
+[submodule "v1/themes/up-business-theme"]
+	path = v1/themes/up-business-theme
+	url = https://gitlab.com/writeonlyhugo/up-business-theme.git
