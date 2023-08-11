@@ -1,0 +1,11 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "Our team is sponsored by"
+  items:
+    - "images/brands-samsumg.png"
+    - "images/brands-google.png"
+    - "images/brands-adobe.png"
+    - "images/brands-spotify.png"
+    - "images/brands-dropbox.png"
