@@ -21,13 +21,60 @@ media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "Blog" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Blog" # Used in the UI, ie.: "New Post"
-    folder: "content/blog" # The path to the folder where the documents are stored
+  - name: "News" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "News" # Used in the UI, ie.: "New Post"
+    folder: "content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "Cars"
+    label: "Cars"
+    folder: "content/cars"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - {
+          label: "Images",
+          name: "images",
+          widget: "list",
+          fields:
+            [
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Caption", name: "caption", widget: "string" },
+            ],
+        }
+      - {
+          label: "Class",
+          name: "class",
+          widget: "select",
+          options: ["Prototype", "Urban Concept"],
+          default: "Prototype",
+        }
+      - { label: "Year", name: "year", widget: "number", default: 2021 }
+      - { label: "Max Speed", name: "maxSpeed", widget: "number" }
+      - {
+          label: "Distance per Liter",
+          name: "distancePerLiter",
+          widget: "number",
+        }
+      - {
+          label: "Achievements",
+          name: "achievements",
+          widget: "object",
+          required: false,
+          fields:
+            [
+              { label: "Year", name: "year", widget: "number" },
+              { label: "Achievement", name: "achievement", widget: "string" },
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
