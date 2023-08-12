@@ -14,7 +14,7 @@ htttps://shell.com/ecomarathon
 
 #### Website Links
 
-[<kbd> <br> Go to website <br> </kbd>][https://cuecoracing.netlify.app/]
+[<kbd> <br> Go to website <br> </kbd>](https://cuecoracing.netlify.app/)
 
 https://cuecoracing.com/
 
