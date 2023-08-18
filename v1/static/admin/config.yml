@@ -23,7 +23,7 @@ public_folder: "images"
 collections: # A list of collections the CMS should be able to edit
   - name: "News" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
-    folder: "content/post" # The path to the folder where the documents are stored
+    folder: "v1/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Cars"
     label: "Cars"
-    folder: "content/cars"
+    folder: "v1/content/cars"
     create: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
@@ -80,7 +80,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Achievements"
     label: "Achievements"
-    folder: "content/achievements"
+    folder: "v1/content/achievements"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -92,7 +92,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Team Members"
     label: "Team Members"
-    folder: "content/team"
+    folder: "v1/content/team"
     create: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
@@ -142,7 +142,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Sponsors"
     label: "Sponsors"
-    folder: "content/sponsors"
+    folder: "v1/content/sponsors"
     create: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
