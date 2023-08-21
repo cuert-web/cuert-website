@@ -1,15 +1,28 @@
 .section.hero {
-  .hero-image {
+  padding: 4rem !important;
+  background-image: url(../../images/hero_img.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  //.hero-image {
     // @media (min-width: 1400px) {
     //   img {
     //     max-width: 125%;
     //     float: right;
     //   }
     // }
+  //}
+  @media (min-width: 1400px) {
+    padding: 6rem !important;
   }
   .hero-title {
     strong {
       color: $danger;
     }
+  }
+  .container {
+    height: 100%;
+    align-items: center;
+    display: flex;
   }
 }
