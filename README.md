@@ -14,11 +14,11 @@ htttps://shell.com/ecomarathon
 
 #### Website Links
 
-[<kbd> <br> Go to website <br> </kbd>](https://cuecoracing.netlify.app/)
+[<kbd> <br> Go to website <br> </kbd>](https://cu-eco.org/)
 
-https://cuecoracing.com/
+https://cu-eco.org/
 
-Admin Panel: https://cuecoracing.netlify.app/admin/
+Admin Panel: https://cu-eco.org/admin/
 
 ## Build Status
 

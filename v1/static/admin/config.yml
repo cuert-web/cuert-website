@@ -13,9 +13,9 @@ backend:
   repo: mo-gaafar/cuert-frontend
   branch: main
   publish_mode: editorial_workflow
-  site_domain: https://cuecoracing.com
-  display_url: https://cuecoracing.com
-  logo_url: https://cuecoracing.com/favicon.ico
+  site_domain: https://cu-eco.org
+  display_url: https://cu-eco.org
+  logo_url: https://cu-eco.org/favicon.ico
 
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
