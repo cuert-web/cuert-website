@@ -26,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Featured", name: "featured", widget: "boolean" }
+      - { label: "Featured", name: "featured", widget: "boolean" , default = false}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
@@ -37,7 +37,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/cars"
     create: true
     fields:
-      - { label: "Featured", name: "featured", widget: "boolean" }
+      - { label: "Featured", name: "featured", widget: "boolean" , default = false}
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - {
@@ -85,7 +85,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/achievements"
     create: true
     fields:
-      - { label: "Featured", name: "featured", widget: "boolean" }
+      - { label: "Featured", name: "featured", widget: "boolean" , default = false}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Award Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image" }
@@ -98,7 +98,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/team"
     create: true
     fields:
-      - { label: "Featured", name: "featured", widget: "boolean" }
+      - { label: "Featured", name: "featured", widget: "boolean" , default = false}
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Department", name: "department", widget: "string" }
       - {
@@ -149,7 +149,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/sponsors"
     create: true
     fields:
-      - { label: "Featured", name: "featured", widget: "boolean" }
+      - { label: "Featured", name: "featured", widget: "boolean" , default = false}
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Link", name: "link", widget: "string" }
