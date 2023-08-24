@@ -36,6 +36,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/cars"
     create: true
     fields:
+      - { label: "Featured", name: "featured", widget: "bool" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - {
@@ -83,6 +84,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/achievements"
     create: true
     fields:
+      - { label: "Featured", name: "featured", widget: "bool" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Award Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image" }
@@ -95,6 +97,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/team"
     create: true
     fields:
+      - { label: "Featured", name: "featured", widget: "bool" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Department", name: "department", widget: "string" }
       - {
@@ -145,6 +148,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "v1/content/sponsors"
     create: true
     fields:
+      - { label: "Featured", name: "featured", widget: "bool" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Link", name: "link", widget: "string" }
