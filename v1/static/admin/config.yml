@@ -19,14 +19,13 @@ backend:
 
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
-slug: "{{day}}-{{hour}}-{{minute}}-{{second}}"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "News" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
     folder: "v1/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{day}}-{{hour}}-{{minute}}-{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
       - {
           label: "Featured",
@@ -43,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Cars"
     folder: "v1/content/cars"
     create: true
-    slug: "{{day}}-{{hour}}-{{minute}}-{{second}}"
+    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
       - {
           label: "Featured",
@@ -97,7 +96,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Achievements"
     folder: "v1/content/achievements"
     create: true
-    slug: "{{day}}-{{hour}}-{{minute}}-{{second}}"
+    slug: "{{day}}-{{hour}}-{{minute}}-{{title}}"
     fields:
       - {
           label: "Featured",
@@ -116,7 +115,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Team Members"
     folder: "v1/content/team"
     create: true
-    slug: "{{day}}-{{hour}}-{{minute}}-{{second}}"
+    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
       - {
           label: "Featured",
@@ -173,7 +172,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Sponsors"
     folder: "v1/content/sponsors"
     create: true
-    slug: "{{day}}-{{hour}}-{{minute}}-{{second}}"
+    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
       - {
           label: "Featured",
