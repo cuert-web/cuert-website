@@ -1,7 +1,7 @@
 {{ if default true .Site.Params.CarouselHomepage.enable }}
 {{ if isset .Site.Data "carousel" }}
 {{ if gt (len .Site.Data.carousel) 0 }}
-<section>
+<section style="height: 100vh;">
     <div class="home-carousel">
         <div class="dark-mask"></div>
         <div class="container">
@@ -15,12 +15,12 @@
                     <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
                     {{ end }}
                         <div class="row">
-                            <div class="col-sm-5 right">
+                            <!--<div class="col-sm-7">
+                                <img class="img-responsive" src="{{ .image }}" alt="">
+                            </div>-->
+                            <div class="col-sm-6">
                                 <h1>{{ .title | safeHTML }}</h1>
                                 {{ .description | safeHTML }}
-                            </div>
-                            <div class="col-sm-7">
-                                <img class="img-responsive" src="{{ .image }}" alt="">
                             </div>
                         </div>
                     {{ if .href }}
