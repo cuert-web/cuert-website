@@ -6,7 +6,7 @@ The frontend of Cairo University Eco Racing Team (Shell Eco-Racing) website.
 
 Built using [Hugo](https://gohugo.io/) and Netlify CMS [Netlify CMS](https://www.netlifycms.org/).
 
-Starter Theme used: [Up Business Theme](https://themes.gohugo.io/themes/up-business-theme/)
+Starter Theme used: Universal Hugo Theme
 
 #### Shell Eco Marathon 2024
 
