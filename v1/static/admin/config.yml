@@ -17,13 +17,12 @@ backend:
   display_url: https://cu-eco.org
   logo_url: https://cu-eco.org/favicon.ico
 
-media_folder: "static/images" # Folder where user uploaded files should go
-public_folder: "images"
+media_folder: "v1/static/img" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
   - name: "News" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
-    folder: "v1/content/post" # The path to the folder where the documents are stored
+    folder: "v1/content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{day}}-{{hour}}-{{minute}}-{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
