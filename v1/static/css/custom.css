@@ -1,5 +1,7 @@
 /* your styles go here */
-
+.h2, h2 {
+    font-size: 46px;
+}
 /* Example site test */
 
 .box-image-text .image {

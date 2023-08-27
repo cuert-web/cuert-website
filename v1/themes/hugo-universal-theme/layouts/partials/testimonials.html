@@ -2,7 +2,7 @@
 {{ if .Site.Params.testimonials.enable }}
 {{ if isset .Site.Data "testimonials" }}
 {{ if gt (len .Site.Data.testimonials) 0 }}
-<section class="bar background-pentagon no-mb">
+<section class="bar background-white no-mb">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -24,17 +24,16 @@
                     {{ range .Site.Data.testimonials }}
                     <li class="item">
                         <div class="testimonial same-height-always">
-                            <div class="text">
-                                <p>{{ .text | markdownify }}</p>
-                            </div>
                             <div class="bottom">
-                                <div class="icon"><i class="fas fa-quote-left"></i>
-                                </div>
+                                <!--<div class="icon"><i class="fas fa-trophy"></i></div>-->
                                 <div class="name-picture">
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
-                                    <h5>{{ .name }}</h5>
+                                    <h3>{{ .name }}</h3>
                                     <p>{{ .position }}</p>
                                 </div>
+                            </div>
+                            <div class="text">
+                                <p>{{ .text | markdownify }}</p>
                             </div>
                         </div>
                     </li>
