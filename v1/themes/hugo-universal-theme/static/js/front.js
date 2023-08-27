@@ -110,8 +110,8 @@ function sliders () {
       slideSpeed: ($('.testimonials').attr('data-slide-speed') || 2000),
       paginationSpeed: ($('.testimonials').attr('data-pagination-speed') || 1000),
       autoPlay: $('.testimonials').attr('data-autoplay') === 'true',
-      itemsDesktopSmall: [990, 3],
-      itemsTablet: [768, 2],
+      itemsDesktopSmall: [990, 2],
+      itemsTablet: [768, 1],
       itemsMobile: [480, 1]
     })
 

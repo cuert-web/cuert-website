@@ -657,7 +657,7 @@ fieldset[disabled] .btn-template-transparent-primary.active {
 .btn-template-transparent-black {
   color: #ffffff;
   background-color: transparent;
-  border-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 .btn-template-transparent-black:hover,
 .btn-template-transparent-black:focus,
@@ -3145,6 +3145,7 @@ fieldset[disabled] .btn-template-primary.active {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: var(--primary-accent);
+  color: #fff;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888888;
