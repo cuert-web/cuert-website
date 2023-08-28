@@ -1,6 +1,6 @@
 {{ if isset .Site.Params "recent_posts" }}
 {{ if .Site.Params.recent_posts.enable }}
-<section class="bar background-white no-mb">
+<section class="bar background-white no-mb news">
     <div class="container">
 
         <div class="col-md-12">
@@ -16,23 +16,23 @@
 
             <div class="row">
                 {{ $posts := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-                {{ range first 4 $posts.Pages }}
-                <div class="col-md-3 col-sm-6">
+                {{ range first 3 $posts.Pages }}
+                <div class="col-md-4 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
-                            <div class="image" style="overflow:hidden">
+                            <div class="image">
                                 {{ if isset .Params "banner" }}
                                 <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
                                 {{ else }}
                                 <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
                                 {{ end }}
                             </div>
-                            <div class="bg"></div>
+                            <!--<div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
                                     <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> {{ i18n "readMore" }}</a>
                                 </p>
-                            </div>
+                            </div>-->
                         </div>
 
                         <div class="content">

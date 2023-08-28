@@ -5,15 +5,15 @@
 /* Example site test */
 
 .box-image-text .image {
-    min-height: 190px;
-    max-height: 190px;
-}
-
-.box-image-text .image img {
-    max-height: 190px;
+    height: 215px;
+  }
+  
+  .box-image-text .image img {
+    max-height: 215px;
     margin: auto;
-}
-
-.box-simple {
+  }
+  
+  .box-simple {
     min-height: 230px;
-}
+  }
+  

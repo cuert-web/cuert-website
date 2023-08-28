@@ -1,10 +1,9 @@
 .box-image-text .image {
-  min-height: 190px;
-  max-height: 190px;
+  height: 215px;
 }
 
 .box-image-text .image img {
-  max-height: 190px;
+  max-height: 210px;
   margin: auto;
 }
 

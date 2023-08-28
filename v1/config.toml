@@ -59,26 +59,26 @@ pluralizelisttitles = false
     weight = 3
     name = "Phone"
     url = "tel:+12 34 567 89 01"
-    pre = "<i class='fas fa-2x fa-phone-alt'></i>"
+    pre = "<i class='fas fa-phone-alt'></i>"
 
 
 [[menu.topbar]]
     weight = 1
     name = "Facebook"
     url = "https://www.facebook.com/ShellEcoMarathonCUT"
-    pre = "<i class='fab fa-2x fa-facebook-f'></i>"
+    pre = "<i class='fab fa-facebook-f'></i>"
 
 [[menu.topbar]]
     weight = 2
     name = "Twitter"
     url = "https://twitter.com/CUEcoRacingTeam"
-    pre = "<i class='fab fa-2x fa-twitter'></i>"
+    pre = "<i class='fab fa-twitter'></i>"
 
 [[menu.topbar]]
     weight = 4
     name = "Email"
     url = "mailto:info@cu-eco.org"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
@@ -165,11 +165,7 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or info@cu-eco.org</p>
-      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
-      </p>
-      """
+    text = ""
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
@@ -231,8 +227,8 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    title = "News"
+    subtitle = ""
     hide_summary = false
 
 [params.footer.recent_posts]

@@ -3,10 +3,10 @@
   --primary-accent: #21a99f;
   --navbar-border-top: #294d76;
   --button-border: #336194;
-  --link-focus: #2f5a89;
+  --link-focus: #028077;
   --form-shadow: rgba(70, 127, 191, 0.6);
   --pagination-bg: #b8cee6;
-  --link-hover-bg: #36669c;
+  --link-hover-bg: #028077;
   --navbar-focus: #92b3d9;
 }
 
@@ -110,13 +110,23 @@ div.section {
 .heading h5 {
   display: inline-block;
   color: var(--primary-accent);
-  /* line-height: 1.1; */
   margin-bottom: 0;
-  /* padding-bottom: 10px; */
-  /* vertical-align: middle; */
   text-transform: uppercase;
-  /* letter-spacing: 0.06em; */
   margin-top: 0;
+  transform: skewX(10deg);
+  position: relative;
+  z-index: 1;
+}
+.heading h2::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 70%;
+  background-color: #fff0cc;
+  transform: skewX(25deg);
+  z-index: -1;
 }
 .heading h1 i[class^="fa"],
 .heading h2 i[class^="fa"],
@@ -246,9 +256,8 @@ ul.list-style-none {
   }
 }
 #top {
-  background: var(--primary-accent);
   color: #ffffff;
-  padding: 10px 0;
+  margin-top: 42px;
 }
 
 #top .row {
@@ -260,20 +269,10 @@ ul.list-style-none {
   font-size: 12px;
 }
 #top .social {
-  float: right;
-  text-align: right;
 }
 #top .social a {
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  padding: 5px;
-  font-size: 9px;
-  margin: 0 -1px;
-  border-radius: 1px;
 }
 #top .social a:hover {
-  color: #000f0e;
 }
 #top .social a:hover.facebook {
   background-color: #4460ae;
@@ -441,11 +440,12 @@ ul.list-style-none {
 .navbar .navbar-buttons button,
 .navbar .navbar-buttons a.btn,
 .navbar .navbar-buttons .btn-default.navbar-toggle {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 18px;
+  margin-bottom: 0;
   margin-left: 0;
-  margin-right: 5px;
+  margin-right: 10px;
   border: none;
+  font-size: 20px;
 }
 .navbar .btn-default,
 .navbar .btn-default.navbar-toggle {
@@ -533,7 +533,7 @@ header:first-of-type {
   text-transform: capitalize;
   padding: 8px 12px;
   font-size: 12px;
-  border-radius: 1px;
+  border-radius: 34px;
   border: none;
 }
 .input-group .btn {
@@ -567,7 +567,7 @@ header:first-of-type {
 .btn-template-main:active,
 .btn-template-main.active,
 .open > .dropdown-toggle.btn-template-main {
-  color: var(--primary-accent);
+  color: #fff;
   background-color: #e6e6e6;
   border-color: var(--button-border);
 }
@@ -602,8 +602,7 @@ fieldset[disabled] .btn-template-main.active {
 .btn-template-main:focus,
 .btn-template-main:active,
 .btn-template-main.active {
-  background: #fff;
-  color: var(--primary-accent);
+  background: #028077;
 }
 .btn-template-transparent-primary {
   color: #ffffff;
@@ -1282,7 +1281,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .testimonials {
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 .testimonials .item {
   list-style-type: none;
@@ -1344,7 +1343,7 @@ fieldset[disabled] .btn-template-primary.active {
   color: #999999;
   font-size: 12px;
 }
-.testimonials .item .testimonial .name-picture img {
+.testimonials .item .testimonial .name-picture img, .box-image-text .image img {
   /* float: right; */
   width: 100%;
   border-radius: 4px;
@@ -1534,6 +1533,12 @@ fieldset[disabled] .btn-template-primary.active {
   text-align: center;
   margin: 15px 0;
 }
+.box-image-text .content {
+  padding: 18px 24px;
+  background: #f0f6ff;
+  border-radius: 4px;
+  margin-top: 12px;
+}
 .box-image .bg {
   position: absolute;
   top: auto;
@@ -1607,10 +1612,10 @@ fieldset[disabled] .btn-template-primary.active {
   overflow: hidden;
   text-align: center;
   margin: 15px 0;
+  background: #fff;
 }
 .box-image-text .top {
   position: relative;
-  margin-bottom: 10px;
 }
 .box-image-text .top .bg {
   position: absolute;
@@ -1641,7 +1646,6 @@ fieldset[disabled] .btn-template-primary.active {
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
-  letter-spacing: 0.08em;
 }
 .box-image-text .top .name h3 a {
   color: #fff;
@@ -1664,17 +1668,16 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-image-text .content h3,
 .box-image-text .content h4 {
-  text-transform: uppercase;
-  line-height: 1.5;
+  text-transform: capitalize;
   color: #555555;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  font-size: 22px;
+  margin-top: 0;
 }
 .box-image-text .content p {
   color: #999999;
 }
 .box-image-text:hover .bg {
-  opacity: 0.7;
   filter: alpha(opacity=70);
 }
 .box-image-text:hover .name {
@@ -1784,7 +1787,7 @@ fieldset[disabled] .btn-template-primary.active {
 .bar {
   position: relative;
   background: var(--primary-accent);
-  padding: 60px 0;
+  padding: 80px 0;
 }
 .bar.background-pentagon {
   background: url('../img/texture-bw.png') center center repeat;
@@ -1792,7 +1795,7 @@ fieldset[disabled] .btn-template-primary.active {
   border-bottom: solid 1px #999999;
 }
 .bar.background-gray {
-  background: #f0fdfc;
+  background: #f0f6ff;
 }
 .bar.background-gray-dark {
   background: #001f1d;
@@ -2183,8 +2186,6 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-image-text.blog .author-category {
   color: #999999;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   font-weight: 300;
   font-size: 12px;
 }
@@ -2193,7 +2194,12 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-image-text.blog .intro {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 #blog-homepage .post {
   margin-bottom: 30px;
@@ -2554,7 +2560,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 #footer {
   background: #000f0e;
-  padding: 50px 0;
+  padding: 70px 0;
   color: #999999;
 }
 #footer h1,
@@ -2639,12 +2645,33 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 0;
 }
 #footer .social a {
-  color: #555555;
-  font-size: 25px;
-  margin: 0 10px 0 0;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: var(--primary-accent);
+  border-radius: 30px;
+  text-align: center;
+  padding: 8px;
 }
 #footer .social a:hover {
+  background: #028077;
+}
+
+#footer form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer input[type="email"] {
+  font-family: 'Sen';
+  font-weight: 400;
+  padding: 8px 10px;
+  width: calc(100% - 87px);
   color: var(--primary-accent);
+  border: none;
+  border-radius: 38px;
 }
 #copyright {
   background: #000f0e;
@@ -2982,13 +3009,13 @@ fieldset[disabled] .btn-template-primary.active {
   position: relative;
   float: right;
   margin-right: 15px;
-  padding: 9px 10px;
+  padding: 6px 10px;
   margin-top: 14px;
   margin-bottom: 14px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 1px;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -3052,6 +3079,14 @@ fieldset[disabled] .btn-template-primary.active {
 @media (max-width: 767px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
+    background: rgb(0 0 0 / 78%);
+    box-shadow: 0px 10px 10px #1c1c1c;
+    width: 100%;
+    margin: auto;
+    border-radius: 1px;
   }
 }
 @media (min-width: 768px) {
@@ -3144,15 +3179,15 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: var(--primary-accent);
-  color: #fff;
+  color: var(--primary-accent);
+  background-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888888;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #424242;
+  border-color: transparent;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -3228,7 +3263,6 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
 }
 /* breadcrumbs */
 .breadcrumb {
@@ -3604,4 +3638,8 @@ a.list-group-item.active > .badge,
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 15px;
   right: 15px;
+}
+
+.news.bar.background-white.no-mb p.lead {
+  margin: 0;
 }
