@@ -102,7 +102,9 @@ function sliders () {
       autoPlay: $('.customers').attr('data-autoplay') === 'true',
       itemsDesktopSmall: [990, 4],
       itemsTablet: [768, 2],
-      itemsMobile: [480, 1]
+      itemsMobile: [480, 1],
+      navigation: true,
+      navigationText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
     })
 
     $('.testimonials').owlCarousel({

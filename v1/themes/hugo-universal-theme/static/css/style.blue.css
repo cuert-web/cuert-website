@@ -101,7 +101,7 @@ div.section {
   margin-bottom: 20px !important;
 }
 .heading {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .heading h1,
 .heading h2,
@@ -1140,22 +1140,20 @@ fieldset[disabled] .btn-template-primary.active {
 .owl-carousel .owl-controls .owl-buttons,
 .owl-theme .owl-controls .owl-buttons {
   position: absolute;
-  top: 5px;
-  right: 0;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .owl-carousel .owl-controls .owl-buttons div,
 .owl-theme .owl-controls .owl-buttons div {
-  width: 26px;
-  height: 26px;
-  line-height: 25px;
-  margin: 0 5px 0 0;
-  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  font-size: 22px;
   color: var(--primary-accent);
-  padding: 0;
-  background: #fff;
-  border-radius: 13px;
-  vertical-align: middle;
-  text-align: center;
+  /* padding: 5px; */
   opacity: 1;
   filter: alpha(opacity=100);
 }
