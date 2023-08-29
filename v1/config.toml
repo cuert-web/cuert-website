@@ -55,12 +55,6 @@ pluralizelisttitles = false
 
 # Top bar social links menu
 
-[[menu.topbar]]
-    weight = 3
-    name = "Phone"
-    url = "tel:+12 34 567 89 01"
-    pre = "<i class='fas fa-phone-alt'></i>"
-
 
 [[menu.topbar]]
     weight = 1
@@ -73,6 +67,18 @@ pluralizelisttitles = false
     name = "Twitter"
     url = "https://twitter.com/CUEcoRacingTeam"
     pre = "<i class='fab fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Instagram"
+    url = "https://www.instagram.com/cuecoracingteam/"
+    pre = "<i class='fab fa-instagram'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Linkedin"
+    url = "https://www.linkedin.com/company/cairo-university-eco-racing-team/mycompany/"
+    pre = "<i class='fab fa-linkedin'></i>"
 
 [[menu.topbar]]
     weight = 4
@@ -94,7 +100,7 @@ pluralizelisttitles = false
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = true
-    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+    googleMapsApiKey = "AIzaSyBi395YUFTzWGT9qmCx98PXip8coe1OM1o"
 
     latitude = "30.025266"
     longitude = "31.212306"
@@ -150,7 +156,7 @@ pluralizelisttitles = false
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     contact_url = "/contact"
-    address = """<p>Cairo University
+    address = """<p>Faculty of Engineering
         <br>Cairo University Rd.
         <br>Giza
         <br>12613
