@@ -25,25 +25,25 @@ pluralizelisttitles = false
 # Main menu
 [[menu.main]]
     name       = "Home"
-    identifier = "menu.home"
+    identifier = "home"
     url        = "/"
     weight     = 1
 
 [[menu.main]]
-    identifier = "menu.achievements"
     name       = "Achievements"
+    identifier = "achievements"
     url        = "/achievements"
     weight     = 2
 
 [[menu.main]]
     name       = "Cars"
-    identifier = "menu.cars"
+    identifier = "cars"
     url        = "/cars/"
     weight     = 3
 
 [[menu.main]]
     name       = "News"
-    identifier = "menu.blog"
+    identifier = "blog"
     url        = "/blog/"
     weight     = 4
 

@@ -3644,3 +3644,109 @@ a.list-group-item.active > .badge,
 .news.bar.background-white.no-mb p.lead {
   margin: 0;
 }
+
+/* Cars Page */
+#cars .bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 70px 0;
+}
+
+.bar > div:first-of-type .car {
+  margin-top: 0;
+}
+
+#cars .properties {
+  display: flex;
+  align-items: stretch;
+}
+
+#cars .properties div div, #cars .description div div {
+  padding: 24px;
+  background: #f0f6ff;
+  border-radius: 4px;
+  height: 100%;
+}
+
+#cars .description div div {
+  margin-top: 20px;
+}
+
+#cars .car-img {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #cars .car-img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  #cars .car-img {
+    margin-top: 70px;
+  }
+}
+
+#cars .car-img::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 68%;
+  background-color: var(--primary-accent);
+  z-index: -1;
+  top: 0;
+  left: 24px;
+  border-radius: 4px;
+  transform: skewX(190deg);
+}
+
+#cars img {
+  width: 100%;
+}
+
+.bar > div:nth-of-type(even) .car {
+  flex-direction: row-reverse;
+}
+
+#cars .bar > div:nth-of-type(even) .car-img::after {
+  transform: skewX(350deg);
+  left: auto;
+  right: 24px;
+}
+
+#cars h4 {
+  margin: 0;
+  color: var(--primary-accent);
+  font-family: 'Sen';
+}
+
+#cars .car-info {
+  margin-bottom: 20px;
+}
+
+#cars .car-info h2 {
+  margin: 0;
+}
+
+#cars .car-info span {
+  padding: 2px 8px;
+  background: var(--primary-accent);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+}
+
+#cars .properties span {
+  font-size: 48px;
+  font-family: 'Pathway Gothic One';
+  font-weight: 900;
+  color: #000f0e;
+}
