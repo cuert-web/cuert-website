@@ -38,7 +38,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Cars"
     identifier = "menu.cars"
-    url        = "/faq/"
+    url        = "/cars/"
     weight     = 3
 
 [[menu.main]]
@@ -78,7 +78,7 @@ pluralizelisttitles = false
     weight = 2
     name = "Linkedin"
     url = "https://www.linkedin.com/company/cairo-university-eco-racing-team/mycompany/"
-    pre = "<i class='fab fa-linkedin'></i>"
+    pre = "<i class='fab fa-linkedin-in'></i>"
 
 [[menu.topbar]]
     weight = 4
