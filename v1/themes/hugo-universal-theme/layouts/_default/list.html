@@ -17,6 +17,16 @@
 
         <div id="content">
             <div class="container">
+            <!-- Add section with summary of index-->
+            <!-- "{{ .Content }}" pulls from the markdown content of the corresponding _index.md -->
+            <article>
+                {{ with .Content }}{{ . }}{{ end }}
+            </article>
+            
+            <!-- you can add an if condition here that import a slideshow partial for example depending on what layout you want, 
+            so it modifies this default list template. It will always default to this for any content folder... 
+            i dont know if there is a workaround other than this-->
+
                 <div class="row">
                     <!-- *** LEFT COLUMN *** -->
 

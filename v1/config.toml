@@ -88,10 +88,11 @@ pluralizelisttitles = false
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "DevCows"
+    author = "CUERT"
     defaultKeywords = ["devcows", "hugo", "go"]
-    mainSections = ["blog"]
-    defaultDescription = "Site template made by Devcows using Hugo"
+    newsSection = ["blog"]
+    mainSections = ["blog","achievements","cars"]
+    defaultDescription = "Site template made using Hugo"
 
     # Social media
     facebook_site = "ShellEcoMarathonCUT" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
