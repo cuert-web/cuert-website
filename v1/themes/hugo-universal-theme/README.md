@@ -630,14 +630,14 @@ The resulting HTML will be the following:
 
 ```html
 <meta name="keywords" content="devcows, hugo, go">
-<meta name="description" content="Site template made by Devcows using Hugo">
-<meta property="og:description" content="Site template made by Devcows using Hugo">
+<meta name="description" content="Site template made using Hugo">
+<meta property="og:description" content="Site template made using Hugo">
 <meta property="og:image" content="img/sharing-default.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="420">
 <meta property="article:publisher" content="https://www.facebook.com/GolangSociety/">
-<meta name="twitter:description" content="Site template made by Devcows using Hugo">
+<meta name="twitter:description" content="Site template made using Hugo">
 <meta name="twitter:site" content="@GoHugoIO">
 ```
 

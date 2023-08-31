@@ -92,7 +92,7 @@ pluralizelisttitles = false
     defaultKeywords = ["devcows", "hugo", "go"]
     newsSection = ["blog"]
     mainSections = ["blog","achievements","cars"]
-    defaultDescription = "Site template made using Hugo"
+    defaultDescription = "Cairo University Eco-Racing Team is a group of students from Cairo University who are passionate about engineering and the environment. We are working on building a prototype of a fuel-efficient vehicle to compete in the Shell Eco-Marathon competition."
 
     # Social media
     facebook_site = "ShellEcoMarathonCUT" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
