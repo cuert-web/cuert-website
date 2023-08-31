@@ -5,7 +5,7 @@
                 <div class="col-sm-6">
                     <div class="car-img">
                         {{ if isset .Params "thumbnail" }}
-                        <img src="{{ .Params.thumbnail | relURL }}" class="img-responsive" alt="" >
+                        <img src="{{  replace .Params.thumbnail "/v1/static" "" | relURL }}" class="img-responsive" alt="" >
                         {{ else }}
                         <img src="{{ "img/car-coming-soon-front.png" | relURL }}" class="img-responsive" alt="">
                         {{ end }}
@@ -47,7 +47,9 @@
                         <div>
                             <!-- Styled list of achievments card with thumbnail-->
                             <div class="col-xs-6">
+                                {{ range .Params.achievements }}
                                 <div>
+                                    <!-- Note: this is an array of achievements by the way-->
                                     <!-- TODO please add image here and finish the achievements bar with all its data-->
                                     <!-- <div class="image">
                                         {{ if isset .Params "thumbnail" }}
@@ -56,9 +58,11 @@
                                         <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="" style="height: max-content=200px;" >
                                         {{ end }}
                                     </div> -->
-                                    <h4>{{ .Params.achievements.achievement}}</h4>
-                                    <p>{{ .Params.achievements.description }}</p>
+                                    <h4>{{.achievement}}</h4>
+                                    <span>{{.year}}</span>
+
                                 </div>
+                                {{ end }}
                         </div>
                     </div>
                 </div>
