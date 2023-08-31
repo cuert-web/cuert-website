@@ -1,0 +1,68 @@
+<div class="container" id="cars">
+    <section class="bar background-white">
+        <div>
+            <div class="car">
+                <div class="col-sm-6">
+                    <div class="car-img">
+                        {{ if isset .Params "thumbnail" }}
+                        <img src="{{ .Params.thumbnail | relURL }}" class="img-responsive" alt="" >
+                        {{ else }}
+                        <img src="{{ "img/car-coming-soon-front.png" | relURL }}" class="img-responsive" alt="">
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="car-info">
+                        <h2>{{.Params.name}}</h2>
+                        <span>{{.Params.year}}</span>
+                        <span>{{.Params.class}}</span>
+                    </div>
+                    <div class="properties row">
+                        <div class="col-xs-6">
+                            <div>
+                                <h4>Max Speed</h4>
+                                <span>{{.Params.maxSpeed}}</span> Km/H
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>
+                                <h4>Distance / Liter</h4>
+                                <span>{{.Params.distancePerLiter}}</span> M
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description row">
+                        <div class="col-xs-12">
+                            <div>
+                                <p>
+                                    {{.Params.description}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-achievements">
+                    <h3>Car Achievements</h3>
+                    <div>
+                        <div>
+                            <!-- Styled list of achievments card with thumbnail-->
+                            <div class="col-xs-6">
+                                <div>
+                                    <!-- TODO please add image here and finish the achievements bar with all its data-->
+                                    <!-- <div class="image">
+                                        {{ if isset .Params "thumbnail" }}
+                                        <img src="{{ .Params.thumbnail | relURL }}" class="img-responsive" alt="" style="height: max-content=200px;"  >
+                                        {{ else }}
+                                        <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="" style="height: max-content=200px;" >
+                                        {{ end }}
+                                    </div> -->
+                                    <h4>{{ .Params.achievements.achievement}}</h4>
+                                    <p>{{ .Params.achievements.description }}</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

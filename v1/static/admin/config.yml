@@ -78,7 +78,7 @@ collections: # A list of collections the CMS should be able to edit
       - {
           label: "Achievements",
           name: "achievements",
-          widget: "object",
+          widget: "list",
           required: false,
           fields:
             [

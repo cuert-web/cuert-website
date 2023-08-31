@@ -1,53 +1,24 @@
-<div class="container" id="cars">
-    {{ .Content }}
-    <section class="bar background-white">
-        <div>
-            <div class="car">
-                <div class="col-sm-6">
-                    <div class="car-img">
-                        <img src="../img/car1.png">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="car-info">
-                        <h2>CURT Eco CC</h2>
-                        <span>2021</span>
-                        <span>Prototype</span>
-                    </div>
-                    <div class="properties row">
-                        <div class="col-xs-6">
-                            <div>
-                                <h4>Max Speed</h4>
-                                <span>300</span> Km/H
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div>
-                                <h4>Distance / Liter</h4>
-                                <span>600</span> M
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description row">
-                        <div class="col-xs-12">
-                            <div>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="car-achievements">
-                    <h3>Car Achievements</h3>
-                    <div>
-                        <div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+<section class="bar background-white no-mb news">
+    <div class="container">
 
+        <div class="col-md-12">
+            <!-- *** CARS HOMEPAGE *** -->
+            <div class="row">
+                {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "cars") }}
+                {{ range $posts.Pages }}
+                {{ partial "cars_card.html" . }}
+                {{ end }}
+
+            </div>
+            <!-- /.row -->
+
+            <!-- *** CARS HOMEPAGE END *** -->
+
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+
+</div>
+<!-- /.container -->
