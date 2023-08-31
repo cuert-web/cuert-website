@@ -3250,7 +3250,7 @@ a {
 a:hover,
 a:focus {
   color: var(--link-focus);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -3655,11 +3655,10 @@ a.list-group-item.active > .badge,
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 70px 0;
 }
 
-.bar > div:first-of-type .car {
-  margin-top: 0;
+#cars .bar .car-achievements {
+  margin-bottom: 140px;
 }
 
 #cars .properties {
@@ -3687,6 +3686,9 @@ a.list-group-item.active > .badge,
   #cars .car-img {
     margin-bottom: 40px;
   }
+  #cars .car-achievements .row > div {
+    margin-bottom: 20px;
+  }  
 }
 
 @media (min-width: 768px) {
@@ -3712,7 +3714,7 @@ a.list-group-item.active > .badge,
   width: 100%;
 }
 
-.bar > div:nth-of-type(even) .car {
+#cars .bar > div:nth-of-type(even) .car {
   flex-direction: row-reverse;
 }
 
@@ -3722,10 +3724,11 @@ a.list-group-item.active > .badge,
   right: 24px;
 }
 
-#cars h4 {
+#cars h4, #cars h5 {
   margin: 0;
   color: var(--primary-accent);
   font-family: 'Sen';
+  text-transform: capitalize;
 }
 
 #cars .car-info {
@@ -3736,7 +3739,7 @@ a.list-group-item.active > .badge,
   margin: 0;
 }
 
-#cars .car-info span {
+#cars .car-info span,#cars .car-achievements-info span {
   padding: 2px 8px;
   background: var(--primary-accent);
   border-radius: 2px;
@@ -3744,9 +3747,52 @@ a.list-group-item.active > .badge,
   font-size: 12px;
 }
 
+#cars .car-achievements .row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#cars .car-achievements-info span {
+  background: #ff8585;
+  color: #a92d2a;
+}
+
 #cars .properties span {
   font-size: 48px;
   font-family: 'Pathway Gothic One';
   font-weight: 900;
   color: #000f0e;
+}
+
+#cars .car-achievements-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 24px;
+  background: #fff0cc;
+  border-radius: 4px;
+  height: calc(100% - 170px);
+}
+
+#cars .car-achievements-info > div:first-of-type {
+  width: 25%;
+}
+
+#cars .car-achievements-info > div:last-of-type {
+  width: 70%;
+}
+
+#cars h5 {
+  margin-bottom: 7px;
+}
+
+#cars .car-achievements .achievement-image img {
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(55, 84, 170, 0.06), -5px -5px 10px rgba(55, 78, 170, 0.06);
+  padding: 4px;
+  max-height: 160px; 
+  object-fit: cover;
 }

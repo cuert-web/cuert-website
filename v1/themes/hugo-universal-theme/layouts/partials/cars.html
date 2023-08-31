@@ -1,24 +1,8 @@
-<section class="bar background-white no-mb news">
-    <div class="container">
-
-        <div class="col-md-12">
-            <!-- *** CARS HOMEPAGE *** -->
-            <div class="row">
-                {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "cars") }}
-                {{ range $posts.Pages }}
-                {{ partial "cars_card.html" . }}
-                {{ end }}
-
-            </div>
-            <!-- /.row -->
-
-            <!-- *** CARS HOMEPAGE END *** -->
-
-        </div>
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /.bar -->
-
+<div class="container" id="cars">
+    <section class="bar background-white">
+        {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "cars") }}
+        {{ range $posts.Pages }}
+        {{ partial "cars_card.html" . }}
+        {{ end }}
+    </section>
 </div>
-<!-- /.container -->
