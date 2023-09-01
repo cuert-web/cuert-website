@@ -103,7 +103,7 @@ collections: # A list of collections the CMS should be able to edit
           default = false,
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Award Date", name: "date", widget: "datetime" }
+      - { label: "Award Date", name: "date", widget: "date" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Body", name: "awardingBody", widget: "string" }
 
@@ -166,7 +166,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Sponsors"
     label: "Sponsors"
-    folder: "v1/data/clinets"
+    folder: "v1/data/clients"
     extension: yaml
     format: yaml
     create: true
