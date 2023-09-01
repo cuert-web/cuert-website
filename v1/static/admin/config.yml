@@ -29,6 +29,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Weight", name: "weight", widget: "number"  }
       - { label: "Image", name: "image", widget: "image" }
 
