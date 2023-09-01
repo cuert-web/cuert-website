@@ -9,10 +9,10 @@
 
                 {{ if isset .Site.Params "formspree_action" }}
 
-                <div class="heading">
+                <!--<div class="heading">
                   <h3>{{ i18n "contactForm" }}</h3>
-                </div>
-
+                </div>-->
+                <hr>
                 <div id="contact-message"></div>
 
                 <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="{{ .Site.Params.formspree_action }}">
@@ -43,7 +43,7 @@
                         {{ end }}
 
                         <div class="col-sm-12 text-center">
-                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>{{ i18n "contactSend" }}</button>
+                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i> {{ i18n "contactSend" }}</button>
 
                         </div>
                     </div>

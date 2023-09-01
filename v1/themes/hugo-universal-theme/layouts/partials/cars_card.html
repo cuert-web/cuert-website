@@ -47,11 +47,11 @@
             {{ range .Params.achievements }}
             <div class="col-sm-4">
                 <div class="achievement-image">
-                    {{ if isset .achievements "image" }}
-                    <img src="{{  replace .achievements.image "/v1/static" "" | relURL }}" class="img-responsive" alt="">
-                    {{ else }}
+                    <img src="{{  replace .image "/v1/static" "" | relURL }}" class="img-responsive" alt="">
+                    <!--{{ if isset .Params "image" }}-->
+                    <!--{{ else }}
                     <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
-                    {{ end }}
+                    {{ end }}-->
                 </div>
                 <div class="car-achievements-info">
                     <div>

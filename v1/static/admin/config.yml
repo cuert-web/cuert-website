@@ -32,6 +32,7 @@ collections: # A list of collections the CMS should be able to edit
           widget: "boolean",
           default = false,
         }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
@@ -102,9 +103,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Award Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Awarding Body", name: "awardingBody", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "awardingBody", widget: "string" }
 
   - name: "Team Members"
     label: "Team Members"
@@ -176,10 +175,8 @@ collections: # A list of collections the CMS should be able to edit
           default = false,
         }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Logo", name: "logo", widget: "image" }
       - { label: "Link", name: "link", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "settings"
     label: "Settings"
