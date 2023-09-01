@@ -1142,7 +1142,7 @@ fieldset[disabled] .btn-template-primary.active {
 .owl-theme .owl-controls .owl-buttons {
   position: absolute;
   z-index: 10;
-  top: 70px;
+  top: 95px;
   left: 0;
   width: 100%;
   display: flex;
@@ -1166,6 +1166,7 @@ fieldset[disabled] .btn-template-primary.active {
   display: flex;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 .home-carousel::before {
   content: "";
@@ -1178,6 +1179,7 @@ fieldset[disabled] .btn-template-primary.active {
   background: url('../img/photogrid.jpg') center center repeat;
   background-size: cover;
   filter: blur(2px);
+  transform: scale(1.01);
 }
 .home-carousel .dark-mask {
   position: absolute;
@@ -1252,6 +1254,26 @@ fieldset[disabled] .btn-template-primary.active {
 .home-carousel ul li {
   margin-bottom: 10px;
 }
+
+.background-carousel {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: blur(2px);
+  transform: scale(1.01);
+}
+.background-carousel * {
+  height: 100%;
+}
+
+.background-carousel .owl-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .customers {
   padding: 0;
   margin-bottom: 40px;
@@ -1274,6 +1296,7 @@ fieldset[disabled] .btn-template-primary.active {
   transition: all 0.2s ease-out;
   padding: 0 20px
 }
+
 .customers .item img:hover {
   max-width: auto;
   filter: none;
@@ -3683,6 +3706,9 @@ a.list-group-item.active > .badge,
 }
 
 @media (max-width: 768px) {
+  .customers .item img {
+    padding: 0 55px;
+  }
   #cars .car-img {
     margin-bottom: 40px;
   }
