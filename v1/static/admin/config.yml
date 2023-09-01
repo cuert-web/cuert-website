@@ -20,7 +20,6 @@ backend:
 media_folder: "v1/static/img" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-
   - name: "slider"
     label: "Slider"
     widget: "list"
