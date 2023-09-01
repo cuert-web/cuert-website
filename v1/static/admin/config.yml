@@ -94,6 +94,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     slug: "{{day}}-{{hour}}-{{minute}}-{{title}}"
     extension: yaml
+    format: yaml
     fields:
       - {
           label: "Featured",
@@ -167,6 +168,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Sponsors"
     folder: "v1/data/clinets"
     extension: yaml
+    format: yaml
     create: true
     slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
