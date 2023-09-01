@@ -91,7 +91,7 @@ pluralizelisttitles = false
     # Social media
     facebook_site = "ShellEcoMarathonCUT" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
     twitter_site = "CUEcoRacingTeam" # the Twitter handle of your site (without the '@')
-    default_sharing_image = "img/sharing-default.png"
+    default_sharing_image = "img/apple-touch-icon.png"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = true
