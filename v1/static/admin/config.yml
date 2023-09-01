@@ -20,9 +20,8 @@ backend:
 media_folder: "v1/static/img" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
- -  label: "Slider",
-    name: "slider",
-    widget: "list",
+ -  label: "Slider"
+    widget: "list"
     folder: "v1/data/carousel"
     extension: yaml
     format: yaml
