@@ -90,9 +90,10 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Achievements"
     label: "Achievements"
-    folder: "v1/content/achievements"
+    folder: "v1/data/testimonials"
     create: true
     slug: "{{day}}-{{hour}}-{{minute}}-{{title}}"
+    extension: yaml
     fields:
       - {
           label: "Featured",
@@ -164,7 +165,8 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "Sponsors"
     label: "Sponsors"
-    folder: "v1/content/sponsors"
+    folder: "v1/data/clinets"
+    extension: yaml
     create: true
     slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
@@ -175,8 +177,8 @@ collections: # A list of collections the CMS should be able to edit
           default = false,
         }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Logo", name: "logo", widget: "image" }
-      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Logo", name: "image", widget: "image" }
+      - { label: "Link", name: "url", widget: "string" }
 
   - name: "settings"
     label: "Settings"

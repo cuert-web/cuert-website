@@ -27,13 +27,13 @@
                             <div class="bottom">
                                 <!--<div class="icon"><i class="fas fa-trophy"></i></div>-->
                                 <div class="name-picture">
-                                    <img class="" alt="" src="{{ .avatar | absURL }}">
-                                    <h3>{{ .name }}</h3>
-                                    <p>{{ .position }}</p>
+                                    <img class="" alt="" src="{{  replace .image "/v1/static" "" | relURL }}">
+                                    <h3>{{ .title }}</h3>
+                                    <p>{{ .date }}</p>
                                 </div>
                             </div>
                             <div class="text">
-                                <p>{{ .text | markdownify }}</p>
+                                <p>{{ .awardingBody | markdownify }}</p>
                             </div>
                         </div>
                     </li>
