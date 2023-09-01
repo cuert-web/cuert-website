@@ -1272,6 +1272,7 @@ fieldset[disabled] .btn-template-primary.active {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  padding: 0 20px
 }
 .customers .item img:hover {
   max-width: auto;
