@@ -8,7 +8,7 @@
         data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
         {{ range sort .Site.Data.carousel "weight" }}
         <div class="item">
-            <img class="img-responsive" src="{{ .image }}" alt="">
+            <img class="img-responsive" src="{{  replace .image "/v1/static" "" | relURL }}" alt="">
         </div>
         {{ end }}
     </div>
