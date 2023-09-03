@@ -1151,7 +1151,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 #cars .owl-carousel .owl-controls .owl-buttons > div{
   border-radius: 3px;
-  border: 1px solid #999;
+  border: 1px solid #dfdfdf;
   font-size: 18px;
   text-align: center;
   padding: 2px 4px;
