@@ -122,7 +122,7 @@ collections: # A list of collections the CMS should be able to edit
           default = false,
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Award Date", name: "date", widget: "date" }
+      - { label: "Award Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
       - { label: "Image", name: "image", widget: "image" }
     
       - { label: "Body", name: "awardingBody", widget: "string" }
