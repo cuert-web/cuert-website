@@ -102,7 +102,7 @@ function sliders () {
       autoPlay: $('.customers').attr('data-autoplay') === 'true',
       itemsDesktopSmall: [990, 4],
       itemsTablet: [768, 2],
-      itemsMobile: [480, 1],
+      itemsMobile: [480, 2],
       navigation: true,
       navigationText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
     })
@@ -133,6 +133,14 @@ function sliders () {
       afterMove: function () {
         // animationsSlider()
       }
+    })
+
+    $('.cars-carousal').owlCarousel({
+      slideSpeed: ($('.cars-carousal').attr('data-slide-speed')),
+      paginationSpeed: ($('.cars-carousal').attr('data-pagination-speed')),
+      singleItem: true,
+      navigation: true,
+      navigationText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
     })
   }
 }

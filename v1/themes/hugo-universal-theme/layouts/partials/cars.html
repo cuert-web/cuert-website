@@ -1,8 +1,13 @@
 <div class="container" id="cars">
     <section class="bar background-white">
-        {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "cars") }}
-        {{ range $posts.Pages }}
-        {{ partial "cars_card.html" . }}
-        {{ end }}
+        <div class="cars-carousal owl-carousel"
+        data-autoplay="false"
+        data-slide-speed="2000"
+        data-pagination-speed="1000">
+            {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "cars") }}
+            {{ range $posts.Pages }}
+            {{ partial "cars_card.html" . }}
+            {{ end }}
+        </div>
     </section>
 </div>
