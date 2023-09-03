@@ -24,7 +24,7 @@
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
-.owl-carousel .owl-wrapper {
+.customers .owl-carousel .owl-wrapper {
 	display: flex !important; /* To override display:block I added !important */
 	flex-direction: row;
 	align-items: center; /* To center the carousel */
