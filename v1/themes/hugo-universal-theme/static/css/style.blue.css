@@ -3683,12 +3683,6 @@ a.list-group-item.active > .badge,
   flex-wrap: wrap;
 }
 
-.car {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 #cars .bar .car-achievements {
   margin-bottom: 60px;
 }
