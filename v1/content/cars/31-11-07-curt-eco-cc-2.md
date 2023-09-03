@@ -1,7 +1,7 @@
 ---
 featured: false
 name: Fouka Bay
-thumbnail: /v1/static/img/2.jpg
+thumbnail: /v1/static/img/222.png
 class: Prototype
 year: 2017
 maxSpeed: 70
