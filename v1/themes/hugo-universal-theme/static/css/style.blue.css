@@ -1150,12 +1150,11 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #cars .owl-carousel .owl-controls .owl-buttons > div{
-  background: var(--primary-accent);
-  color: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
+  border: 1px solid #999;
   font-size: 18px;
   text-align: center;
-  padding: 3px 6px;
+  padding: 2px 4px;
   margin: 0 3px;
 }
 .owl-carousel .owl-controls .owl-buttons div,
@@ -3814,4 +3813,16 @@ a.list-group-item.active > .badge,
   padding: 4px;
   height: 160px; 
   object-fit: cover;
+}
+
+#cars .owl-carousel {
+    position: relative;
+}
+
+#cars .owl-buttons {
+    position: absolute;
+    top: -42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
