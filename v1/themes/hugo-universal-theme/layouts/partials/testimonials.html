@@ -21,7 +21,7 @@
                     data-autoplay="{{ default false .Site.Params.CarouselTestimonials.auto_play }}"
                     data-slide-speed="{{ default 2000 .Site.Params.CarouselTestimonials.slide_speed }}"
                     data-pagination-speed="{{ default 1000 .Site.Params.CarouselTestimonials.pagination_speed }}">
-                    {{ range .Site.Data.testimonials }}
+                    {{ range sort .Site.Data.testimonials "weight" }}
                     <li class="item">
                         <div class="testimonial same-height-always">
                             <div class="bottom">
