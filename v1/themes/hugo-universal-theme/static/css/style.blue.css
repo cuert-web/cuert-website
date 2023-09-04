@@ -3714,10 +3714,11 @@ a.list-group-item.active > .badge,
   #cars .bar .car-achievements {
     margin-bottom: 10px;
   }
-  #cars .car-achievements .row > div {
-    margin-bottom: 20px;
-  }  
 }
+
+#cars .car-achievements .row > div {
+    margin-bottom: 20px;
+}  
 
 @media (min-width: 768px) {
   #cars .car-img {
