@@ -22,8 +22,8 @@
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image">
-                                {{ if isset .Params "banner" }}
-                                <img src="{{ replace .Params.banner "/v1/static" "" | relURL }}" class="img-responsive" alt="" >
+                                {{ if isset .Params "thumbnail" }}
+                                <img src="{{ .Params.thumbnail | relURL }}" class="img-responsive" alt="" >
                                 {{ else }}
                                 <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
                                 {{ end }}
