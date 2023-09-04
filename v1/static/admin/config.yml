@@ -18,6 +18,7 @@ backend:
   logo_url: https://cu-eco.org/favicon.ico
 
 media_folder: "v1/static/img" # Folder where user uploaded files should go
+public_folder: "/img" # The src attribute for uploaded files will begin with this folder name
 
 collections: # A list of collections the CMS should be able to edit
   - name: "slider"
@@ -36,7 +37,7 @@ collections: # A list of collections the CMS should be able to edit
           default = false,
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Weight", name: "weight", widget: "number"  }
+      - { label: "Weight", name: "weight", widget: "number" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "News" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -96,7 +97,14 @@ collections: # A list of collections the CMS should be able to edit
                 label: "Icon",
                 name: "icon",
                 widget: "select",
-                options: ["🏆 Trophy", "🌟 Award", "🥇 First", "🥈 Second", "🥉 Third"],
+                options:
+                  [
+                    "🏆 Trophy",
+                    "🌟 Award",
+                    "🥇 First",
+                    "🥈 Second",
+                    "🥉 Third",
+                  ],
                 default: "🏆 Trophy",
               },
               { label: "Year", name: "year", widget: "number" },
@@ -122,66 +130,71 @@ collections: # A list of collections the CMS should be able to edit
           default = false,
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Award Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+      - {
+          label: "Award Date",
+          name: "date",
+          widget: "date",
+          format: "YYYY-MM-DD",
+        }
       - { label: "Image", name: "image", widget: "image" }
-    
+
       - { label: "Body", name: "awardingBody", widget: "string" }
-#  - name: "Team Members"
-#    label: "Team Members"
-#    folder: "v1/content/team"
-#    create: true
-#    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
-#    fields:
-#      - {
-#          label: "Featured",
-#          name: "featured",
-#          widget: "boolean",
-#          default = false,
-#        }
-#      - { label: "Name", name: "name", widget: "string" }
-#      - { label: "Department", name: "department", widget: "string" }
-#      - {
-#          label: "Graduation Year",
-#          name: "graduationYear",
-#          widget: "number",
-#          default: 2023,
-#        }
-#      - {
-#          label: "Subteam Name",
-#          name: "subteam",
-#          widget: "string",
-#          required: false,
-#        }
-#      - {
-#          label: "Role",
-##          name: "role",
-#          widget: "select",
-#          options: ["Member", "Head", "Vice Head", "Advisor", "Team Leader"],
-#        }
-#      - { label: "Profile Picture", name: "image", widget: "image" }
-#      - { label: "Bio", name: "bio", widget: "markdown" }
-#      - { label: "Tags", name: "tags", widget: "list", required: false }
-#     - label: "Socials"
-#        name: "socials"
-#        widget: "object"
-#        required: false
-#        fields:
-#          - label: "Linkedin"
-#            name: "linkedin"
-#            required: false
-#            widget: "string"
-#          - label: "Facebook"
-#            name: "facebook"
-#            required: false
-#            widget: "string"
-#          - label: "Instagram"
-#            name: "instagram"
-#            required: false
-#            widget: "string"
-#          - label: "Twitter"
-#            name: "twitter"
-#            required: false
-#            widget: "string"
+  #  - name: "Team Members"
+  #    label: "Team Members"
+  #    folder: "v1/content/team"
+  #    create: true
+  #    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
+  #    fields:
+  #      - {
+  #          label: "Featured",
+  #          name: "featured",
+  #          widget: "boolean",
+  #          default = false,
+  #        }
+  #      - { label: "Name", name: "name", widget: "string" }
+  #      - { label: "Department", name: "department", widget: "string" }
+  #      - {
+  #          label: "Graduation Year",
+  #          name: "graduationYear",
+  #          widget: "number",
+  #          default: 2023,
+  #        }
+  #      - {
+  #          label: "Subteam Name",
+  #          name: "subteam",
+  #          widget: "string",
+  #          required: false,
+  #        }
+  #      - {
+  #          label: "Role",
+  ##          name: "role",
+  #          widget: "select",
+  #          options: ["Member", "Head", "Vice Head", "Advisor", "Team Leader"],
+  #        }
+  #      - { label: "Profile Picture", name: "image", widget: "image" }
+  #      - { label: "Bio", name: "bio", widget: "markdown" }
+  #      - { label: "Tags", name: "tags", widget: "list", required: false }
+  #     - label: "Socials"
+  #        name: "socials"
+  #        widget: "object"
+  #        required: false
+  #        fields:
+  #          - label: "Linkedin"
+  #            name: "linkedin"
+  #            required: false
+  #            widget: "string"
+  #          - label: "Facebook"
+  #            name: "facebook"
+  #            required: false
+  #            widget: "string"
+  #          - label: "Instagram"
+  #            name: "instagram"
+  #            required: false
+  #            widget: "string"
+  #          - label: "Twitter"
+  #            name: "twitter"
+  #            required: false
+  #            widget: "string"
 
   - name: "Sponsors"
     label: "Sponsors"

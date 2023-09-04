@@ -19,6 +19,7 @@ paginate = 10
 # not pluralize title pages by default
 pluralizelisttitles = false
 
+staticDir = ["static", "v1/static/"]
 [menu]
 
 
