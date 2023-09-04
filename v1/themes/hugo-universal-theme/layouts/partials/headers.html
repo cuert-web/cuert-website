@@ -2,8 +2,8 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ $title_plain := .Title | markdownify | plainify }}
-<title>{{ $title_plain }}</title>
+{{ $title_plain := .Title | markdownify }}
+<title>Cairo Universty Eco-Racing Team</title>
 <meta name="author" content="{{ .Param "author" }}" />
 {{ $keywords := .Site.Params.defaultKeywords | default (slice "" | first 0) }}
 {{ if isset .Params "tags" }}{{ range .Params.tags }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
@@ -29,11 +29,7 @@
 <link href="{{ "css/animate.css" | relURL }}" rel="stylesheet">
 
 <!-- Theme stylesheet, if possible do not edit this stylesheet -->
-{{ with .Site.Params.style }}
-  <link href="{{ "css/style" | relURL }}.{{ . }}.css" rel="stylesheet" id="theme-stylesheet">
-{{ else }}
-  <link href="{{ "css/style.default.css" | relURL }}" rel="stylesheet" id="theme-stylesheet">
-{{ end }}
+<link href="{{ "css/style.blue.css" | relURL }}" rel="stylesheet" id="theme-stylesheet">
 
 <!-- Custom stylesheet - for your changes -->
 <link href="{{ "css/custom.css" | relURL }}?{{ now.Unix }}" rel="stylesheet">

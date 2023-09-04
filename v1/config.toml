@@ -101,9 +101,6 @@ staticDir = ["static", "v1/static/"]
     latitude = "30.025266"
     longitude = "31.212306"
 
-    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "blue"
-
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
     # email. Visitors can send up to a 50 emails each month for free.
