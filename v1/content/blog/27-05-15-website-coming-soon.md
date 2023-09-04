@@ -1,6 +1,13 @@
 ---
 featured: true
-title: Website coming soon
-date: 2023-08-27T05:14:22.621Z
+thumbnail: /v1/static/img/websitelive.jpg
+title: Website Released!
+date: 2023-09-04T05:10:49.379Z
 ---
-We are currently developing shell eco racing team's website. this is a test article
+A﻿s of Sept 4 2023 we proudly announce the release of our team's website. Thanks for everyone who participated in building this website.
+
+
+
+T﻿his is our homepage
+
+![](/v1/static/img/website_home.png)
