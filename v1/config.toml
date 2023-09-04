@@ -138,7 +138,7 @@ staticDir = ["static", "v1/static/"]
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p> We are a group of students from Cairo University who are passionate about engineering and the environment. We are working on building a prototype of a fuel-efficient vehicle to compete in the Shell Eco-Marathon competition. </p>"
+    about_us = "<p> We are Cairo University's Eco Racing Team, dedicated to innovation and sustainability. Our mission is to create high-efficiency, eco-friendly vehicles to participate in the Shell Eco Marathon. </p>"
     copyright = "Copyright (c) 2023 - 2024, CUERT; All Rights Reserved."
 
     # Format dates with Go's time formatting
@@ -215,7 +215,7 @@ staticDir = ["static", "v1/static/"]
     enable = true
     icon = "far fa-heart"
     title = "Want to support us?"
-    subtitle = "Be one of our great sponsors, and help us to do more achievements."
+    subtitle = "Be one of our great sponsors, and help us do more achievements."
     link_url = "/contact"
     link_text = "Contact"
 
