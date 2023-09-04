@@ -139,7 +139,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Image", name: "image", widget: "image" }
 
       - { label: "Body", name: "awardingBody", widget: "string" }
-      - { label: "Weight", name: "weight", widget: "number", default: 0 }
+      - { label: "Weight", name: "weight", widget: "number", default: 100 }
   #  - name: "Team Members"
   #    label: "Team Members"
   #    folder: "v1/content/team"
