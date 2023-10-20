@@ -1,6 +1,6 @@
 ---
 featured: false
-name: Ra
+name: Ra (رع)
 thumbnail: /v1/static/img/125.png
 class: Prototype
 year: 2017
