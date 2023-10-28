@@ -82,9 +82,21 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Year", name: "year", widget: "number", default: 2021 }
       - { label: "Max Speed", name: "maxSpeed", widget: "number" }
       - {
-          label: "Distance per Liter",
+          label: "Distance",
           name: "distancePerLiter",
           widget: "number",
+          
+        }
+      - {
+          label: "Unit",
+          name: "unit",
+          widget: "select",
+          options:
+            [
+              "Km/KWh",
+              "Km/Liter"
+            ],
+          default: "Km/KWh"
         }
       - {
           label: "Achievements",
