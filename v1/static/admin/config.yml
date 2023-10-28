@@ -93,10 +93,10 @@ collections: # A list of collections the CMS should be able to edit
           widget: "select",
           options:
             [
-              "Km/KWh",
-              "Km/Liter"
+              "Distance / KWh",
+              "Distance / Liter"
             ],
-          default: "Km/KWh"
+          default: "Distance / KWh"
         }
       - {
           label: "Achievements",
