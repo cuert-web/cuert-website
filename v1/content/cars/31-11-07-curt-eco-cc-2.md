@@ -6,6 +6,7 @@ class: Prototype
 year: 2017
 maxSpeed: 70
 distancePerLiter: 249
+unit: Distance / KWh
 achievements:
   - year: 2019
     achievement: Highest record in the middle east for an electric car
