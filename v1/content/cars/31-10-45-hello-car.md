@@ -6,6 +6,7 @@ class: Urban Concept
 year: 2014
 maxSpeed: 50
 distancePerLiter: 120
+unit: Distance / Liter
 achievements:
   - icon: 🥇 First
     year: 2017
