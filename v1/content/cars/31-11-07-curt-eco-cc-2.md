@@ -14,4 +14,4 @@ achievements:
     image: /v1/static/img/_eco3259-1-1-.jpg
     icon: 🌟 Award
 ---
-Our prototype concept vehicle "Fouka Bay" is designed to achieve the highest kilometers with the least kilowatts per hour.
+Our prototype concept vehicle "Ra" is designed to achieve the highest kilometers with the least kilowatts per hour.
