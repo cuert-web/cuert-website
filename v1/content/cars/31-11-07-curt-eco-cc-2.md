@@ -1,7 +1,7 @@
 ---
 featured: false
 name: Ra (رع)
-thumbnail: /v1/static/img/125.png
+thumbnail: /img/_eco3252__1_-removebg-preview.png
 class: Prototype
 year: 2017
 maxSpeed: 70
