@@ -1,6 +1,6 @@
 ---
 featured: true
-thumbnail: /img/cover-1-.jpg
+thumbnail: /img/cc.jpg
 title: "Communication award history "
 date: 2023-11-04T17:58:40.308Z
 tags:
@@ -45,6 +45,6 @@ In addition to our offline activities, we make sure to document our journey usin
 
 ![](/img/fair-.jpg)
 
-![](/img/p2-tv.png)
+![](/img/school.jpg)
 
 ![](/img/ylf-.jpg)
