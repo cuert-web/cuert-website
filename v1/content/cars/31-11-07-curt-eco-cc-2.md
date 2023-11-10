@@ -1,6 +1,6 @@
 ---
 featured: false
-name: Ra (رع)
+name: Horus
 thumbnail: /img/_eco3252__1_-removebg-preview.png
 class: Prototype
 year: 2017
