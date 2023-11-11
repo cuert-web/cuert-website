@@ -152,62 +152,36 @@ collections: # A list of collections the CMS should be able to edit
 
       - { label: "Body", name: "awardingBody", widget: "string" }
       - { label: "Weight", name: "weight", widget: "number", default: 100 }
-  #  - name: "Team Members"
-  #    label: "Team Members"
-  #    folder: "v1/content/team"
-  #    create: true
-  #    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
-  #    fields:
-  #      - {
-  #          label: "Featured",
-  #          name: "featured",
-  #          widget: "boolean",
-  #          default = false,
-  #        }
-  #      - { label: "Name", name: "name", widget: "string" }
-  #      - { label: "Department", name: "department", widget: "string" }
-  #      - {
-  #          label: "Graduation Year",
-  #          name: "graduationYear",
-  #          widget: "number",
-  #          default: 2023,
-  #        }
-  #      - {
-  #          label: "Subteam Name",
-  #          name: "subteam",
-  #          widget: "string",
-  #          required: false,
-  #        }
-  #      - {
-  #          label: "Role",
-  ##          name: "role",
-  #          widget: "select",
-  #          options: ["Member", "Head", "Vice Head", "Advisor", "Team Leader"],
-  #        }
-  #      - { label: "Profile Picture", name: "image", widget: "image" }
-  #      - { label: "Bio", name: "bio", widget: "markdown" }
-  #      - { label: "Tags", name: "tags", widget: "list", required: false }
-  #     - label: "Socials"
-  #        name: "socials"
-  #        widget: "object"
-  #        required: false
-  #        fields:
-  #          - label: "Linkedin"
-  #            name: "linkedin"
-  #            required: false
-  #            widget: "string"
-  #          - label: "Facebook"
-  #            name: "facebook"
-  #            required: false
-  #            widget: "string"
-  #          - label: "Instagram"
-  #            name: "instagram"
-  #            required: false
-  #            widget: "string"
-  #          - label: "Twitter"
-  #            name: "twitter"
-  #            required: false
-  #            widget: "string"
+  - name: "Team Members"
+    label: "Team Members"
+    folder: "v1/content/team-members"
+    create: true
+    slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
+    fields:
+      - { label: "Team Name", name: "team", widget: "string", required: true }
+      - { name: "head", label: "Head", widget: "object", required: true,
+          fields: [
+            { name: "name", label: "Head Name", widget: "string", required: true },
+            { name: "image", label: "Image", widget: "image", required: true },
+            { name: "email", label: "Email", widget: "string", required: false },
+            { name: "linkedin", label: "LinkedIn", widget: "string", required: false },
+            { name: "github", label: "GitHub", widget: "string", required: false },
+            { name: "facebook", label: "Facebook", widget: "string", required: false }
+          ]
+      }
+      - { name: "members", label: "Members", widget: "list",
+        fields: [
+          { name: "name", label: "Name", widget: "string", required: true },
+          { name: "image", label: "Image", widget: "image", required: true },
+          { name: "role", label: "Role", widget: "select", required: true,
+            options: ["Member", "Senior Member", "Head", "Vice Head", "Advisor", "Team Leader"],
+          },
+          { name: "email", label: "Email", widget: "string", required: false },
+          { name: "linkedin", label: "LinkedIn", widget: "string", required: false },
+          { name: "github", label: "GitHub", widget: "string", required: false },
+          { name: "facebook", label: "Facebook", widget: "string", required: false }
+        ]
+      }
 
   - name: "Sponsors"
     label: "Sponsors"
