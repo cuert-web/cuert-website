@@ -1,0 +1,485 @@
+/* Reset CSS */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+} */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* #Electrical, #Web,#Operation ,#LogisticsAndPlanning,#Mechanical,#Autonomous{
+    display: none;
+  } */
+.button-teams button {
+    background-color: #00867e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 35px;
+    border-color: #00867e;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    margin-left: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Almarai", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.09);
+}
+
+.button-teams {
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  } */
+
+/* header {
+    width: 100%;
+    height: 200px;
+    background-color: #0a322f;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    color: #fff;
+} */
+
+.cover-image {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: top; */
+}
+
+.heading {
+    color: #555;
+    text-align: center;
+    font-family: Sen;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}
+
+/* main heading of page */
+
+.main-heading {
+    text-align: center;
+    margin: 100px auto;
+    padding: 1rem;
+}
+
+@media (max-width: 767px) {
+    .main-heading {
+        margin: 25px auto;
+    }
+}
+
+/* end of main header */
+
+/* start of sub teams list  */
+
+.sub-team-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.sub-team-list-overflow {
+    overflow-x: auto;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    /* margin-bottom: 50px; */
+    margin: 50px auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .sub-team-list-overflow {
+        margin: 0px auto;
+    }
+}
+
+.sub-team-list-overflow::-webkit-scrollbar {
+    /* WebKit */
+    /* width: 3px; */
+    height: 6px;
+    visibility: hidden;
+}
+
+.sub-team-list-overflow:hover {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+}
+
+.sub-team-list-overflow:hover::-webkit-scrollbar {
+    visibility: visible;
+    background-color: #fff;
+}
+
+.sub-team-list-overflow:hover::-webkit-scrollbar-thumb {
+    background-color: #00867e;
+    border-radius: 10px;
+}
+
+.sub-team-list-item {
+    background-color: #00867e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+
+    text-align: center;
+    font-family: "Almarai", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.sub-team-list-item:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+    .sub-team-list-item {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+/* end of sub teams list */
+
+/* start of sub team heading */
+
+.sub-heading {
+    text-align: center;
+    margin: 30px auto;
+    padding: 1rem;
+}
+
+@media (max-width: 767px) {
+    .sub-heading {
+        margin: 25px auto;
+    }
+}
+
+/* end of sub team heading */
+
+/* start of sub team description */
+
+.sub-team-p {
+    color: #555;
+    text-align: center;
+    font-family: "Sen", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 1rem;
+}
+
+@media (max-width: 767px) {
+    .sub-team-p {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+/* end of sub team description */
+
+/* start of sub-team head card */
+
+.head-card {
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.head-card-title {
+    color: #00867e;
+    text-align: center;
+    font-family: "Sen", Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .head-card-title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}
+
+.head-card-img-div {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .head-card-img-div {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.head-card-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head-card-name {
+    color: #000;
+    text-align: center;
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+    margin: 8px auto;
+}
+
+@media (max-width: 767px) {
+    .head-card-name {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.icons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons-list-item {
+    width: 27px;
+    height: 27px;
+}
+
+@media (max-width: 767px) {
+    .icons-list-item {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.icons-list-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* end of sub-team head card */
+
+/* start slider */
+
+.center-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 200px;
+}
+
+.slide-container {
+    /* max-width: 1120px; */
+    width: 100%;
+    padding: 40px 0;
+    /* height: fit-content; */
+}
+
+.slide-content {
+    /* height: fit-content; */
+    overflow: hidden;
+    margin: 0 40px;
+}
+
+.swiper-slide-active {
+    transition: 0.5s ease-in-out;
+}
+
+.member-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-card:not(.swiper-slide-active) {
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+}
+
+.member-card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.member-card-image .member-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-name {
+    color: #000;
+    text-align: center;
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.member-role {
+    color: #00867e;
+    text-align: center;
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.swiper-navBtn {
+    color: #00867e;
+}
+
+.swiper-navBtn::after,
+.swiper-navBtn::before {
+    font-size: 40px;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #00867e;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #00867e;
+}
+
+@media screen and (max-width: 767px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+/* end slider */
+
+/* select sections that have id attribute */
+/* section[id] {
+    padding: 1rem;
+  } */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.members-title {
+    color: #00867e;
+
+    text-align: center;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
