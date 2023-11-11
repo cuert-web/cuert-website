@@ -40,8 +40,7 @@ const buttons = document.querySelectorAll(".team-button");
 buttons.forEach((button) => button.addEventListener("click", show));
 
 function show() {
-    const subTeamId = this.innerText.toLowerCase().split(" ").join("-");
-    // add class hide to all sub-teams
+    const subTeamId = this.id;
     subTeams.forEach((subTeam) => {
         subTeam.id !== subTeamId
             ? subTeam.classList.add("hide")
@@ -50,5 +49,3 @@ function show() {
 
     // document.querySelector(`#${sectionId}`).classList.add('show');
 }
-
-console.log("hello from team-members.js");

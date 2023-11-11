@@ -213,7 +213,7 @@ button:hover {
 
 /* start of sub team description */
 
-.sub-team-p {
+.sub-team-p > p {
     color: #555;
     text-align: center;
     font-family: "Sen", Arial, Helvetica, sans-serif;
