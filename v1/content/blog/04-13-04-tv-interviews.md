@@ -1,7 +1,7 @@
 ---
-featured: true
+featured: false
 thumbnail: /img/tag.jpg
-title: TV interviews
+title: Media Spotlight on Cairo University Eco Racing Team
 date: 2023-11-04T13:03:27.161Z
 tags:
   - interviews
@@ -10,15 +10,20 @@ tags:
   - environment
   - racing
 ---
-Who can deny the crucial effect of media on our daily life? The media has a great influence on simply everything. Media influence refers to the power and impact that various forms of media, such as television, newspapers, and the internet have on shaping public opinion and behaviors. The media plays a significant role in shaping our perceptions of the world, influencing our beliefs, values, and decision-making processes.
-The communication is a priority for our team just as the technical aspects of the team. As we care about racing and environment via trying to run the longest distance by the least amount possible of energy, We also care to be engaged with the society. Our team always tries to reach out to a large segment of people out there not just our colleagues. You can notice that on our TV interviews and media contributions.
+Who can deny the crucial effect of media on our daily lives? Media holds great influence over almost everything, shaping public opinion and behaviors through various forms such as television, newspapers, and the internet. It plays a significant role in shaping our perceptions of the world, influencing our beliefs, values, and decision-making processes.
+
+ 
+
+Communication is a top priority for our team, alongside the technical aspects. As we are dedicated to both racing and the environment, aiming to cover the longest distance with the least possible energy, we also prioritize engaging with society. Our team consistently strives to reach a broad audience, extending beyond our immediate colleagues. This commitment is evident in our TV interviews and media contributions.
 
 ![](/img/view.png)
 
-
-Team showed up on several TV interviews with Ahmed Moussa on Sada El-balad channel, on Mehwar channel and on DMC channel with Ahmed Ramy. We also have been recognized on newspapers platforms: Youm7, Dot Masr and Al-bawaba news. Absolutely the team has also been on media. It was an article written by Scene Now.
+The team has made appearances on several TV interviews, including those with Ahmed Moussa on Sada El-balad channel, Mehwar channel, and DMC channel with Ahmed Ramy. Our recognition extends to newspaper platforms such as Youm7, Dot Masr, and Al-bawaba news. Notably, the team has also been featured in an article by Scene Now.
 
 ![](/img/youm7.png)
 
+Through our interviews, it becomes evident that the team is passionate about explaining our work and the challenges we face. Whether it's technical hurdles in manufacturing the car or issues related to travel and visa documents, we aim to keep the audience informed. Our environmental commitment is also prominently highlighted.
 
-Through our interviews, it is obvious that the team cares about explaining to people what we do and the challenges that we face whether it is technical challenges in manufacturing the car or problems related to travelling and issuing the visa documents. And the environmental concern is quite clear.
+ 
+
+In the media spotlight, we seize the opportunity to articulate not only what we do but also the challenges that come with our mission. Our dedication to innovation, sustainability, and overcoming obstacles is consistently communicated to a wider audience.
