@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 thumbnail: /img/sid2-1-.jpg
 title: "AVIC: CUERT's Triumph in the Future Rider Challenge"
 date: 2023-11-07T20:47:44.038Z
