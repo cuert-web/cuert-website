@@ -174,7 +174,7 @@ collections: # A list of collections the CMS should be able to edit
           { name: "name", label: "Name", widget: "string", required: true },
           { name: "image", label: "Image", widget: "image", required: true },
           { name: "role", label: "Role", widget: "select", required: true,
-            options: ["Member", "Senior Member", "Head", "Vice Head", "Advisor", "Team Leader"],
+            options: ["Member", "Senior Member", "Head", "Director", "Advisor", "Racing Team Manager"],
           },
           { name: "email", label: "Email", widget: "string", required: false },
           { name: "linkedin", label: "LinkedIn", widget: "string", required: false },
