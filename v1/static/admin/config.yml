@@ -10,7 +10,7 @@
 
 backend:
   name: git-gateway
-  repo: mo-gaafar/cuert-website
+  repo: cuert-web/cuert-website
   branch: main
   publish_mode: editorial_workflow
   site_domain: https://cu-eco.org
