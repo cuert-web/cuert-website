@@ -159,6 +159,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
       - { label: "Team Name", name: "team", widget: "string", required: true }
+      - { label: "isDirectorsBoard", name: "isDirectorsBoard", widget: "boolean", default: false }
       - { name: "head", label: "Head", widget: "object", required: true,
           fields: [
             { name: "name", label: "Head Name", widget: "string", required: true },
@@ -174,7 +175,7 @@ collections: # A list of collections the CMS should be able to edit
           { name: "name", label: "Name", widget: "string", required: true },
           { name: "image", label: "Image", widget: "image", required: true },
           { name: "role", label: "Role", widget: "select", required: true,
-            options: ["Member", "Senior Member", "Head", "Director", "Advisor", "Racing Team Manager"],
+            options: ["Member", "Senior Member", "Head", "Vice Head", "Director", "Advisor", "Racing Team Manager"],
           },
           { name: "email", label: "Email", widget: "string", required: false },
           { name: "linkedin", label: "LinkedIn", widget: "string", required: false },
