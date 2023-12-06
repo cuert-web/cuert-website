@@ -1,23 +1,14 @@
 ---
-team: "Web Dev"
+team: Web Development
+isDirectorsBoard: false
 head:
-  name: "Mohamed Nasser"
+  name: Mohamed Nasser
   image: /img/placeholder.png
-  email: "monasser@gmail.com"
-  linkedin: "https://www.linkedin.com/"
-  github: "https://github.com/"
-  facebook: "https://www.facebook.com/"
-members:
-  - name: "Mohamed Nasser"
-    image: /img/placeholder.png
-    role: "Team Leader"
-    email: "m@gmail.com"
-    linkedin: "https://www.linkedin.com/"
-    github: "https://www.github.com/"
-    facebook: "https://www.facebook.com/"
-  - name: "Mohamed Nasser"
-    image: /img/placeholder.png
-
+  email: monasser@gmail.com
+  linkedin: https://www.linkedin.com/
+  github: https://github.com/
+  facebook: https://www.facebook.com/
+members: []
 ---
 Web & App development Sub-team was created on October 2019. The sub-team
 is responsible for developing the website and mobile application for the
