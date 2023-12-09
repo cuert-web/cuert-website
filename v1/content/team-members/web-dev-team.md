@@ -27,6 +27,10 @@ members:
     email: khaledfarahat82@gmail.com
     linkedin: https://www.linkedin.com/in/khaled-mostafa-3aaa26265
     facebook: https://www.facebook.com/khaled.moustafa.75839/
+  - name: "Omar Ayman Amin "
+    image: /img/pxl_20230518_153040556-1-omar-mohammad.jpg
+    role: Member
+    linkedin: https://www.linkedin.com/in/omarayman2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 ---
 Web & App development Sub-team was created on October 2019. The sub-team
 is responsible for developing the website and mobile application for the
