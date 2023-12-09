@@ -31,6 +31,12 @@ members:
     image: /img/pxl_20230518_153040556-1-omar-mohammad.jpg
     role: Member
     linkedin: https://www.linkedin.com/in/omarayman2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+  - name: Alaa Mahmoud Elhussein Abdelaal
+    email: alaa.abdelaal02@eng-st.cu.edu.eg
+    role: Member
+    image: /img/whatsapp-image-2023-10-20-at-2.41.45-pm-alaa-abdelaal.jpeg
+    linkedin: https://www.linkedin.com/in/alaa-el-husseiny-b4b710197/
+    facebook: https://www.facebook.com/profile.php?id=100006746265270
 ---
 Web & App development Sub-team was created on October 2019. The sub-team
 is responsible for developing the website and mobile application for the
