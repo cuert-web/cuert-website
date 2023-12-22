@@ -3,11 +3,11 @@ team: Web Development
 isDirectorsBoard: false
 head:
   name: Mohamed Nasser
-  image: /img/placeholder.png
-  email: monasser@gmail.com
-  linkedin: https://www.linkedin.com/
-  github: https://github.com/
-  facebook: https://www.facebook.com/
+  image: https://media.licdn.com/dms/image/D4D03AQEVJcRZY5qicw/profile-displayphoto-shrink_800_800/0/1695014050435?e=1708560000&v=beta&t=49LRHdIscQKhTCddx9I1gv5KcpxTMjMbjPJnAAJqh3s
+  email: mohamed_gaafar@ieee.org
+  linkedin: http://linkedin.com/in/mn-gaafar/
+  github: http://github.com/mo-gaafar
+  facebook: ""
 members:
   - name: Kenzy Ragab Sobhy
     image: /img/b612_20220715_014133_824-kenzy-mohamed-1-.jpg
