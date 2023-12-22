@@ -1,5 +1,5 @@
 <div>
-  
+
   <div class="cover-image">
     <img src="/img/cover.jpg" alt="cover" />
   </div>
@@ -10,221 +10,235 @@
   {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "team-members") }}
   {{ range $posts.Pages }}
   {{ if eq .Params.isDirectorsBoard true }}
-    <div id="{{ .Params.team }}">
+  <div id="{{ .Params.team }}">
 
-      <div class="head-card">
-        <h3 class="head-card-title">Racing Team Manager</h3>
-        <div class="head-card-img-div">
-          <img src="{{ .Params.head.image }}" alt="head-img" />
-        </div>
-        <p class="head-card-name">{{ .Params.head.name }}</p>
-        <ul class="icons-list">
-          {{ if isset .Params.head "email" }}
-            <li class="icons-list-item">
-              <a href="mailto:{{ .Params.head.email }}">
-                <i class="fas fa-envelope"></i></a>
-            </li>
-          {{ end }}
-          {{ if isset .Params.head "linkedin" }}
-            <li class="icons-list-item">
-              <a href="{{ .Params.head.linkedin }}" target="_blank">
-                <i class="fab fa-linkedin-in"></i></a>
-            </li>
-          {{ end }}
-          {{ if isset .Params.head "github" }}
-            <li class="icons-list-item">
-              <a href="{{ .Params.head.github }}" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          {{ end }}
-          {{ if isset .Params.head "facebook" }}
-            <li class="icons-list-item">
-              <a href="{{ .Params.head.facebook }}" target="_blank">
-                <i class="fab fa-facebook-f"></i></a>
-            </li>
-          {{ end }}
-        </ul>
+    <div class="head-card">
+      <h3 class="head-card-title">Racing Team Manager</h3>
+      <div class="head-card-img-div">
+        <img src="{{ .Params.head.image }}" alt="head-img" />
       </div>
+      <p class="head-card-name">{{ .Params.head.name }}</p>
+      <ul class="icons-list">
+        {{ if isset .Params.head "email" }}
+        <li class="icons-list-item">
+          <a href="mailto:{{ .Params.head.email }}">
+            <i class="fas fa-envelope"></i></a>
+        </li>
+        {{ end }}
+        {{ if isset .Params.head "linkedin" }}
+        <li class="icons-list-item">
+          <a href="{{ .Params.head.linkedin }}" target="_blank">
+            <i class="fab fa-linkedin-in"></i></a>
+        </li>
+        {{ end }}
+        {{ if isset .Params.head "github" }}
+        <li class="icons-list-item">
+          <a href="{{ .Params.head.github }}" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        {{ end }}
+        {{ if isset .Params.head "facebook" }}
+        <li class="icons-list-item">
+          <a href="{{ .Params.head.facebook }}" target="_blank">
+            <i class="fab fa-facebook-f"></i></a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
 
-      <div class="head-card-title">Directors</div>
-      
+    <div class="head-card-title">Directors</div>
 
-      <!-- start slider -->
-      <div class="center-slider">
-        <div class="slide-container swiper">
-          <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-              {{ range .Params.members }}
-              <div class="member-card swiper-slide">
-                <div class="image-content">
-                  <div class="member-card-image">
-                    <img src="{{ .image }}" alt="member-img" class="member-card-img" />
-                  </div>
-                </div>
 
-                <div class="member-card-content">
-                  <h4 class="member-name">{{ .name }}</h4>
-                  <p class="member-role">{{ .role }}</p>
-                  <ul class="icons-list">
-                    {{ if isset . "email" }}
-                      <li class="icons-list-item">
-                        <a href="mailto:{{ .email }}"><i class="fas fa-envelope"></i></a>
-                      </li>
-                    {{ end }}
-                    {{ if isset . "linkedin" }}
-                      <li class="icons-list-item">
-                        <a href="{{ .linkedin }}" target="_blank">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </a>
-                      </li>
-                    {{ end }}
-                    {{ if isset . "github" }}
-                      <li class="icons-list-item">
-                        <a href="{{ .github }}" target="_blank">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    {{ end }}
-                    {{ if isset . "facebook" }}
-                      <li class="icons-list-item">
-                        <a href="{{ .facebook }}" target="_blank">
-                          <i class="fab fa-facebook-f"></i></a>
-                        </a>
-                      </li>
-                    {{ end }}
-                  </ul>
+    <!-- start slider -->
+    <div class="center-slider">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            {{ range .Params.members }}
+            <div class="member-card swiper-slide">
+              <div class="image-content">
+                <div class="member-card-image">
+                  <img src="{{ .image }}" alt="member-img" class="member-card-img" />
                 </div>
               </div>
-              {{ end }}
+
+              <div class="member-card-content">
+                <h4 class="member-name">{{ .name }}</h4>
+                <p class="member-role">{{ .role }}</p>
+                <ul class="icons-list">
+                  {{ if isset . "email" }}
+                  <li class="icons-list-item">
+                    <a href="mailto:{{ .email }}"><i class="fas fa-envelope"></i></a>
+                  </li>
+                  {{ end }}
+                  {{ if isset . "linkedin" }}
+                  <li class="icons-list-item">
+                    <a href="{{ .linkedin }}" target="_blank">
+                      <i class="fab fa-linkedin-in"></i></a>
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ if isset . "github" }}
+                  <li class="icons-list-item">
+                    <a href="{{ .github }}" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ if isset . "facebook" }}
+                  <li class="icons-list-item">
+                    <a href="{{ .facebook }}" target="_blank">
+                      <i class="fab fa-facebook-f"></i></a>
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
             </div>
+            {{ end }}
           </div>
-          <div class="swiper-button-next swiper-navBtn"></div>
-          <div class="swiper-button-prev swiper-navBtn"></div>
-          <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-    {{ end }}
+  </div>
+  {{ end }}
   {{ end }}
 
 
 
   <h1 class="main-heading heading">Meet Our Sub-Teams</h1>
-  
-  <div class="button-teams">
-    {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "team-members") }}
-    {{ range $posts.Pages }}
-    {{ if or (eq .Params.isDirectorsBoard nil) (eq .Params.isDirectorsBoard false) }}
+
+
+
+
+  <div class="swipable-buttons">
+    <div class="button-teams">
+      {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
+      {{ range $teamPages }}
+      {{ if or (eq .Params.isDirectorsBoard nil) (eq .Params.isDirectorsBoard false) }}
       <button class="team-button" id="{{ .Params.team }}"> {{ .Params.team }} Team </button>
-    {{ end }}
-    {{ end }}
+      {{ end }}
+      {{ end }}
+    </div>
   </div>
+
+
+
+  <!-- {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
+  {{ range $teamPages }}
+  <button class="team-button" id="{{ .Params.team }}"> {{ .Params.team }} Team </button>
+  {{ end }} -->
+
   <!-- starting of define teams -->
 
-  {{ range $posts.Pages }}
+  {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
+  {{ range $teamPages }}
   {{ if or (eq .Params.isDirectorsBoard nil) (eq .Params.isDirectorsBoard false) }}
 
-    <div id="{{ .Params.team }}" class="hide sub-team">
-      <h2 class="sub-heading heading"> {{ .Params.team }} Sub-team</h2>
-      <div class="sub-team-p">
-        {{ .Params.isDirectorsBoard }}
-        {{ .Content }}
+  <div id="{{ .Params.team }}" class="hide sub-team">
+    <h2 class="sub-heading heading"> {{ .Params.team }}</h2>
+    <div class="sub-team-p">
+      <!-- {{ .Params.isDirectorsBoard }} -->
+      {{ .Content }}
+    </div>
+
+    <div class="head-card">
+      <h3 class="head-card-title">{{ .Params.team }} head</h3>
+      <div class="head-card-img-div">
+        <img src="{{ .Params.head.image }}" alt="head-img" />
       </div>
+      <p class="head-card-name">{{ .Params.head.name }}</p>
+      <ul class="icons-list">
+        {{ if isset .Params.head "email" }}
+        <li class="icons-list-item">
+          <a href="mailto:{{ .Params.head.email }}">
+            <i class="fas fa-envelope"></i></a>
+        </li>
+        {{ end }}
+        {{ if isset .Params.head "linkedin" }}
+        <li class="icons-list-item">
+          <a href="{{ .Params.head.linkedin }}" target="_blank">
+            <i class="fab fa-linkedin-in"></i></a>
+        </li>
+        {{ end }}
+        {{ if isset .Params.head "github" }}
+        <li class="icons-list-item">
+          <a href="{{ .Params.head.github }}" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        {{ end }}
+        {{ if isset .Params.head "facebook" }}
+        <li class="icons-list-item">
+          <a href="{{ .Params.head.facebook }}" target="_blank">
+            <i class="fab fa-facebook-f"></i></a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
 
-      <div class="head-card">
-        <h3 class="head-card-title">{{ .Params.team }} head</h3>
-        <div class="head-card-img-div">
-          <img src="{{ .Params.head.image }}" alt="head-img" />
-        </div>
-        <p class="head-card-name">{{ .Params.head.name }}</p>
-        <ul class="icons-list">
-          {{ if isset .Params.head "email" }}
-            <li class="icons-list-item">
-              <a href="mailto:{{ .Params.head.email }}">
-                <i class="fas fa-envelope"></i></a>
-            </li>
-          {{ end }}
-          {{ if isset .Params.head "linkedin" }}
-            <li class="icons-list-item">
-              <a href="{{ .Params.head.linkedin }}" target="_blank">
-                <i class="fab fa-linkedin-in"></i></a>
-            </li>
-          {{ end }}
-          {{ if isset .Params.head "github" }}
-            <li class="icons-list-item">
-              <a href="{{ .Params.head.github }}" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          {{ end }}
-          {{ if isset .Params.head "facebook" }}
-            <li class="icons-list-item">
-              <a href="{{ .Params.head.facebook }}" target="_blank">
-                <i class="fab fa-facebook-f"></i></a>
-            </li>
-          {{ end }}
-        </ul>
-      </div>
+    <div class="head-card-title">Members</div>
 
-      <div class="head-card-title">Members</div>
-      
 
-      <!-- start slider -->
-      <div class="center-slider">
-        <div class="slide-container swiper">
-          <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-              {{ range .Params.members }}
-              <div class="member-card swiper-slide">
-                <div class="image-content">
-                  <div class="member-card-image">
-                    <img src="{{ .image }}" alt="member-img" class="member-card-img" />
-                  </div>
-                </div>
-
-                <div class="member-card-content">
-                  <h4 class="member-name">{{ .name }}</h4>
-                  <p class="member-role">{{ .role }}</p>
-                  <ul class="icons-list">
-                    {{ if isset . "email" }}
-                      <li class="icons-list-item">
-                        <a href="mailto:{{ .email }}"><i class="fas fa-envelope"></i></a>
-                      </li>
-                    {{ end }}
-                    {{ if isset . "linkedin" }}
-                      <li class="icons-list-item">
-                        <a href="{{ .linkedin }}" target="_blank">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </a>
-                      </li>
-                    {{ end }}
-                    {{ if isset . "github" }}
-                      <li class="icons-list-item">
-                        <a href="{{ .github }}" target="_blank">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    {{ end }}
-                    {{ if isset . "facebook" }}
-                      <li class="icons-list-item">
-                        <a href="{{ .facebook }}" target="_blank">
-                          <i class="fab fa-facebook-f"></i></a>
-                        </a>
-                      </li>
-                    {{ end }}
-                  </ul>
+    <!-- start slider -->
+    <div class="center-slider">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            {{ range .Params.members }}
+            <div class="member-card swiper-slide">
+              <div class="image-content">
+                <div class="member-card-image">
+                  <img src="{{ .image }}" alt="member-img" class="member-card-img" />
                 </div>
               </div>
-              {{ end }}
+
+              <div class="member-card-content">
+                <h4 class="member-name">{{ .name }}</h4>
+                <p class="member-role">{{ .role }}</p>
+                <ul class="icons-list">
+                  {{ if isset . "email" }}
+                  <li class="icons-list-item">
+                    <a href="mailto:{{ .email }}"><i class="fas fa-envelope"></i></a>
+                  </li>
+                  {{ end }}
+                  {{ if isset . "linkedin" }}
+                  <li class="icons-list-item">
+                    <a href="{{ .linkedin }}" target="_blank">
+                      <i class="fab fa-linkedin-in"></i></a>
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ if isset . "github" }}
+                  <li class="icons-list-item">
+                    <a href="{{ .github }}" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ if isset . "facebook" }}
+                  <li class="icons-list-item">
+                    <a href="{{ .facebook }}" target="_blank">
+                      <i class="fab fa-facebook-f"></i></a>
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
             </div>
+            {{ end }}
           </div>
-          <div class="swiper-button-next swiper-navBtn"></div>
-          <div class="swiper-button-prev swiper-navBtn"></div>
-          <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
+  </div>
   {{ end }}
   {{ end }}
 
