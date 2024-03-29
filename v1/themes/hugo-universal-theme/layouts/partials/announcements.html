@@ -1,0 +1,37 @@
+{{ if .Site.Data.announcements }}
+<div class="announcement-slider" style="width: 800px; overflow: hidden;">
+    {{ range sort .Site.Data.announcements "Weight" }} {{ if .Params.featured }}
+    <div class="announcement-slide" style="width: 100%; float: left;">
+        <h3 style="color: blue; text-align: center;">{{ .Params.title }}</h3>
+        <p style="margin: 20px;">{{ .Params.body }}</p>
+        {{ if .Params.link }}
+        <a href="{{ .Params.link }}" class="button"
+            style="display: block; margin: 0 auto; background-color: #007bff; color: white; padding: 10px;">
+            {{ .Params.linkText }}
+        </a>
+        {{ end }}
+    </div>
+    {{ end }} {{ end }}
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let slideWidth = $('.announcement-slide').width();
+        let slideCount = $('.announcement-slide').length;
+        let totalWidth = slideWidth * slideCount;
+
+        $('.announcement-slider').css('width', totalWidth);
+
+        function slideNext() {
+            $('.announcement-slider').animate({
+                marginLeft: -slideWidth
+            }, 500, function () {
+                $(this).children('.announcement-slide:first').appendTo($(this));
+                $(this).css('margin-left', 0);
+            });
+        }
+
+        setInterval(slideNext, 3000);
+    });
+</script>
+{{ end }}

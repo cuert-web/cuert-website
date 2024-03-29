@@ -39,6 +39,26 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Weight", name: "weight", widget: "number" }
       - { label: "Image", name: "image", widget: "image" }
+  - name: "Announcements"
+    label: "Announcements"
+    folder: "v1/data/announcements"
+    extension: yaml
+    format: yaml
+    create: true
+    slug: "{{day}}-{{hour}}-{{minute}}-{{title}}"
+    fields:
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default = false,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Link Button Text", name: "linkText", widget: "string" }
+      - { label: "Weight", name: "weight", widget: "number" }
 
   - name: "News" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
@@ -81,22 +101,13 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: "Year", name: "year", widget: "number", default: 2021 }
       - { label: "Max Speed", name: "maxSpeed", widget: "number" }
-      - {
-          label: "Distance",
-          name: "distancePerLiter",
-          widget: "number",
-          
-        }
+      - { label: "Distance", name: "distancePerLiter", widget: "number" }
       - {
           label: "Unit",
           name: "unit",
           widget: "select",
-          options:
-            [
-              "Distance / KWh",
-              "Distance / Liter"
-            ],
-          default: "Distance / KWh"
+          options: ["Distance / KWh", "Distance / Liter"],
+          default: "Distance / KWh",
         }
       - {
           label: "Achievements",
@@ -159,32 +170,113 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{day}}-{{hour}}-{{minute}}-{{name}}"
     fields:
       - { label: "Team Name", name: "team", widget: "string", required: true }
-      - { label: "isDirectorsBoard", name: "isDirectorsBoard", widget: "boolean", default: false }
-      - { name: "head", label: "Head", widget: "object", required: true,
-          fields: [
-            { name: "name", label: "Head Name", widget: "string", required: true },
-            { name: "image", label: "Image", widget: "image", required: true },
-            { name: "email", label: "Email", widget: "string", required: false },
-            { name: "linkedin", label: "LinkedIn", widget: "string", required: false },
-            { name: "github", label: "GitHub", widget: "string", required: false },
-            { name: "facebook", label: "Facebook", widget: "string", required: false }
-          ]
-      }
-      - { name: "members", label: "Members", widget: "list",
-        fields: [
-          { name: "name", label: "Name", widget: "string", required: true },
-          { name: "image", label: "Image", widget: "image", required: true },
-          { name: "role", label: "Role", widget: "select", required: true,
-            options: ["Member", "Senior Member", "Head", "Vice Head", "Director", "Advisor", "Racing Team Manager"],
-          },
-          { name: "email", label: "Email", widget: "string", required: false },
-          { name: "linkedin", label: "LinkedIn", widget: "string", required: false },
-          { name: "github", label: "GitHub", widget: "string", required: false },
-          { name: "facebook", label: "Facebook", widget: "string", required: false }
-        ]
-      }
+      - {
+          label: "isDirectorsBoard",
+          name: "isDirectorsBoard",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          name: "head",
+          label: "Head",
+          widget: "object",
+          required: true,
+          fields:
+            [
+              {
+                name: "name",
+                label: "Head Name",
+                widget: "string",
+                required: true,
+              },
+              {
+                name: "image",
+                label: "Image",
+                widget: "image",
+                required: true,
+              },
+              {
+                name: "email",
+                label: "Email",
+                widget: "string",
+                required: false,
+              },
+              {
+                name: "linkedin",
+                label: "LinkedIn",
+                widget: "string",
+                required: false,
+              },
+              {
+                name: "github",
+                label: "GitHub",
+                widget: "string",
+                required: false,
+              },
+              {
+                name: "facebook",
+                label: "Facebook",
+                widget: "string",
+                required: false,
+              },
+            ],
+        }
+      - {
+          name: "members",
+          label: "Members",
+          widget: "list",
+          fields:
+            [
+              { name: "name", label: "Name", widget: "string", required: true },
+              {
+                name: "image",
+                label: "Image",
+                widget: "image",
+                required: true,
+              },
+              {
+                name: "role",
+                label: "Role",
+                widget: "select",
+                required: true,
+                options:
+                  [
+                    "Member",
+                    "Senior Member",
+                    "Head",
+                    "Vice Head",
+                    "Director",
+                    "Advisor",
+                    "Racing Team Manager",
+                  ],
+              },
+              {
+                name: "email",
+                label: "Email",
+                widget: "string",
+                required: false,
+              },
+              {
+                name: "linkedin",
+                label: "LinkedIn",
+                widget: "string",
+                required: false,
+              },
+              {
+                name: "github",
+                label: "GitHub",
+                widget: "string",
+                required: false,
+              },
+              {
+                name: "facebook",
+                label: "Facebook",
+                widget: "string",
+                required: false,
+              },
+            ],
+        }
       - { label: "Team Description", name: "body", widget: "markdown" }
-
 
   - name: "Sponsors"
     label: "Sponsors"

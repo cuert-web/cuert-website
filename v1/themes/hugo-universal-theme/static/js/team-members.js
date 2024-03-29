@@ -52,8 +52,10 @@ function show() {
 
 
 // this is for the subteam buttons
-  var swipableContainer = document.querySelector('.swipable-buttons');
+  // carousel.js
 
+document.addEventListener('DOMContentLoaded', function () {
+  var swipableContainer = document.querySelector('.swipable-buttons');
   var startX;
   var scrollLeft;
 
@@ -72,8 +74,8 @@ function show() {
     startX = null;
   });
 
-  var scrollDistance = 400; // Adjust scroll distance
-  var intervalDuration = 4000; // Adjust interval duration (in milliseconds)
+  var scrollDistance = 150; // Adjust scroll distance
+  var intervalDuration = 1000; // Adjust interval duration (in milliseconds)
 
   function autoSwipe() {
     // Use the Scroll API for smooth scrolling
@@ -81,12 +83,39 @@ function show() {
       left: scrollDistance,
       behavior: 'smooth'
     });
+
+    // Reset scroll position to the beginning if at the end
+    if (swipableContainer.scrollLeft + swipableContainer.clientWidth >= swipableContainer.scrollWidth) {
+      swipableContainer.scrollLeft = 0;
+    }
   }
 
-  // Start auto-swiping at regular intervals
+  // Start auto-swiping in both directions at regular intervals
   var swipeInterval = setInterval(autoSwipe, intervalDuration);
 
-  // Stop auto-swiping when the container is clicked
+  // Stop auto-swiping and clear interval when the container is clicked
   swipableContainer.addEventListener('click', function () {
     clearInterval(swipeInterval);
   });
+
+  // Enable swiping in both directions until the user gives input
+  swipableContainer.addEventListener('touchstart', function () {
+    clearInterval(swipeInterval);
+  });
+
+  // Manual scroll function
+  function manualScroll(direction) {
+    swipableContainer.scrollBy({
+      left: direction * scrollDistance,
+      behavior: 'smooth'
+    });
+
+    // Reset scroll position to the beginning if at the end
+    if (swipableContainer.scrollLeft + swipableContainer.clientWidth >= swipableContainer.scrollWidth) {
+      swipableContainer.scrollLeft = 0;
+    }
+  }
+
+  // Expose manualScroll function to the global scope for onclick attribute in HTML
+  window.manualScroll = manualScroll;
+});

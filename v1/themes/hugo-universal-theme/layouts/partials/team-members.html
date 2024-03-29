@@ -116,6 +116,7 @@
 
 
   <div class="swipable-buttons">
+    <button class="arrow left-arrow" onclick="manualScroll(-1)">←</button>
     <div class="button-teams">
       {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
       {{ range $teamPages }}
@@ -124,6 +125,7 @@
       {{ end }}
       {{ end }}
     </div>
+    <button class="arrow right-arrow" onclick="manualScroll(1)">→</button>
   </div>
 
 
