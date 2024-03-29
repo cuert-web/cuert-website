@@ -1,37 +1,53 @@
-{{ if .Site.Data.announcements }}
-<div class="announcement-slider" style="width: 800px; overflow: hidden;">
-    {{ range sort .Site.Data.announcements "Weight" }} {{ if .Params.featured }}
-    <div class="announcement-slide" style="width: 100%; float: left;">
-        <h3 style="color: blue; text-align: center;">{{ .Params.title }}</h3>
-        <p style="margin: 20px;">{{ .Params.body }}</p>
-        {{ if .Params.link }}
-        <a href="{{ .Params.link }}" class="button"
-            style="display: block; margin: 0 auto; background-color: #007bff; color: white; padding: 10px;">
-            {{ .Params.linkText }}
-        </a>
-        {{ end }}
+{{ if isset .Site.Params "announcements" }}
+{{ if .Site.Params.announcements.enable }}
+{{ if isset .Site.Data "announcements" }}
+{{ if gt (len .Site.Data.announcements) 0 }}
+
+<section class="bar no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 full-width" style="background: transparent;">
+                <!-- <div class="heading text-center" style>
+                    <h2>{{ .Site.Params.announcements.title | markdownify }}</h2>
+                </div> -->
+
+                <!-- <p class="lead">
+                    {{ .Site.Params.announcements.subtitle | markdownify }}
+                </p> -->
+                <!-- make it take the whole width -->
+
+                <ul class="cars-carousal owl-carousel same-height-row full-width"
+                    style="width: 100%; background: transparent;"
+                    data-items="{{ default 4 .Site.Params.announcements.items }}"
+                    data-autoplay="{{ default false .Site.Params.announcements.auto_play }}"
+                    data-slide-speed="{{ default 2000 .Site.Params.announcements.slide_speed }}"
+                    data-pagination-speed="{{ default 1000 .Site.Params.announcements.pagination_speed }}">
+
+                    {{ range sort .Site.Data.announcements "weight" }}
+                    <li class="item" style="width: 100%; background: transparent;">
+                        <div class=" testimonial same-height-always"
+                            style="display: flex; justify-content: space-between; width: 100%;background: transparent;">
+                            <div class="bottom" style="flex-grow: 1;">
+                                <div class="name-picture">
+                                    <h2>{{ .title }}</h2>
+                                    <h4>{{ .body }}</h4>
+                                    <p>{{ .date }}</p>
+                                </div>
+                            </div>
+                            <!-- <a href="{{ .link }}" class="button" style="align-self: center;">{{ .linkText }}</a> -->
+                            <a href="{{ .link }}" class="btn btn-template-primary btn-lg" style="align-self: center;">
+                                {{ .linkText }}
+                            </a>
+                        </div>
+                    </li>
+
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
     </div>
-    {{ end }} {{ end }}
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        let slideWidth = $('.announcement-slide').width();
-        let slideCount = $('.announcement-slide').length;
-        let totalWidth = slideWidth * slideCount;
-
-        $('.announcement-slider').css('width', totalWidth);
-
-        function slideNext() {
-            $('.announcement-slider').animate({
-                marginLeft: -slideWidth
-            }, 500, function () {
-                $(this).children('.announcement-slide:first').appendTo($(this));
-                $(this).css('margin-left', 0);
-            });
-        }
-
-        setInterval(slideNext, 3000);
-    });
-</script>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
 {{ end }}

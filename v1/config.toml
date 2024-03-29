@@ -178,6 +178,17 @@ staticDir = ["static", "v1/static/"]
     tags = true
     search = true
 
+[params.announcements]
+    title = ""
+    subtitle = ""
+
+    enable = true
+    items = 1
+    auto_play = true
+    slide_speed = 1000
+    pagination_speed = 1000
+
+
 [params.carouselCustomers]
     items = 6
     auto_play = true
