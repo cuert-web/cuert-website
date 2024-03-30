@@ -17,7 +17,7 @@ members:
     facebook: https://www.facebook.com/menna.nemo.98031?mibextid=ZbWKwL
   - name: Sohaila Mahmoud
     image: /img/sohaila_mahmoud-sohaila-mahmoud-1-1-1-.jpg
-    role: Member
+    role: Senior Member
     email: suhilamahmoud@gmail.com
     linkedin: https://www.linkedin.com/in/sohailamahmoud/
     facebook: https://www.facebook.com/sohaila.mahmoud.315/
@@ -37,6 +37,12 @@ members:
     image: /img/whatsapp-image-2023-10-20-at-2.41.45-pm-alaa-abdelaal.jpeg
     linkedin: https://www.linkedin.com/in/alaa-el-husseiny-b4b710197/
     facebook: https://www.facebook.com/profile.php?id=100006746265270
+  - name: Khaled Mamdouh
+    image: /img/khaled-mamdouh.png
+    role: Senior Member
+    email: ""
+    github: https://github.com/Khalidmamdou7
+    linkedin: https://www.linkedin.com/in/khalidmamdou7
 ---
 Web & App development Sub-team was created on October 2019. The sub-team
 is responsible for developing the website and mobile application for the
