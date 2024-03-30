@@ -3,7 +3,7 @@ team: Web Development
 isDirectorsBoard: false
 head:
   name: Mohamed Nasser
-  image: https://media.licdn.com/dms/image/D4D03AQEVJcRZY5qicw/profile-displayphoto-shrink_800_800/0/1695014050435?e=1708560000&v=beta&t=49LRHdIscQKhTCddx9I1gv5KcpxTMjMbjPJnAAJqh3s
+  image: /img/mohamed-nasser.png
   email: mohamed_gaafar@ieee.org
   linkedin: http://linkedin.com/in/mn-gaafar/
   github: http://github.com/mo-gaafar
