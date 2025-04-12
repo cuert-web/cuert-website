@@ -3,7 +3,7 @@ team: Web Development
 isDirectorsBoard: false
 head:
   name: Amr Hany
-  image: /img/125.png
+  image: /img/photo-amr-hany.jpg
   email: ""
   linkedin: ""
   github: ""
