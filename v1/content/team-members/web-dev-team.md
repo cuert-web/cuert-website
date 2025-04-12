@@ -4,9 +4,9 @@ isDirectorsBoard: false
 head:
   name: Amr Hany
   image: /img/photo-amr-hany.jpg
-  email: ""
-  linkedin: ""
-  github: ""
+  email: amrhanyseed@gmail.com
+  linkedin: https://www.linkedin.com/in/amr-hany-61b544267/
+  github: https://github.com/Amrhanysayed
   facebook: ""
 members:
   - name: Ahmed Amr
