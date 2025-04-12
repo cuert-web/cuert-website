@@ -13,6 +13,9 @@ members:
     image: /img/ahmed_amr.jpg
     role: Member
     email: ahmedamr24680@gmail.com
+  - name: Shady Mohammed
+    image: /img/shady_mohammed.jpg
+    role: Member
 ---
 Web & App development Sub-team was created on October 2019. The sub-team
 is responsible for developing the website and mobile application for the
