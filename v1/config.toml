@@ -142,7 +142,7 @@ staticDir = ["static", "v1/static/"]
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
     about_us = "<p> We are Cairo University's Eco Racing Team, dedicated to innovation and sustainability. Our mission is to create high-efficiency, eco-friendly vehicles to participate in the Shell Eco Marathon. </p>"
-    copyright = "Copyright (c) 2023 - 2024, CUERT; All Rights Reserved."
+    copyright = "Copyright (c) 2025 - 2026, CUERT; All Rights Reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
