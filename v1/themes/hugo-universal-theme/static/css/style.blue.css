@@ -3172,7 +3172,7 @@ fieldset[disabled] .btn-template-primary.active {
   }
 }
 .navbar-default {
-  background-color: #4044a0;
+  background-color: transparent;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
