@@ -27,11 +27,11 @@ a {
     display: none;
   } */
 .button-teams button {
-    background-color: #00867e;
+    background-color: #4a50c2;
     color: #fff;
     padding: 1rem;
     border-radius: 35px;
-    border-color: #00867e;
+    border-color: #4a50c2;
     /* margin-top: 10px; */
     margin-bottom: 10px;
     margin-left: 20px;
@@ -166,12 +166,12 @@ button:hover {
 }
 
 .sub-team-list-overflow:hover::-webkit-scrollbar-thumb {
-    background-color: #00867e;
+    background-color: #4a50c2;
     border-radius: 10px;
 }
 
 .sub-team-list-item {
-    background-color: #00867e;
+    background-color: #4a50c2;
     color: #fff;
     padding: 1rem;
     border-radius: 30px;
@@ -418,7 +418,7 @@ button:hover {
 }
 
 .member-role {
-    color: #00867e;
+    color: #4a50c2;
     text-align: center;
     font-family: Sen;
     font-size: 28px;
@@ -429,7 +429,7 @@ button:hover {
 }
 
 .swiper-navBtn {
-    color: #00867e;
+    color: #4a50c2;
 }
 
 .swiper-navBtn::after,
@@ -446,12 +446,12 @@ button:hover {
 }
 
 .swiper-pagination-bullet {
-    background-color: #00867e;
+    background-color: #4a50c2;
     opacity: 0.8;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #00867e;
+    background-color: #4a50c2;
 }
 
 @media screen and (max-width: 767px) {
@@ -480,7 +480,7 @@ button:hover {
 }
 
 .members-title {
-    color: #00867e;
+    color: #4a50c2;
 
     text-align: center;
     font-family: Sen;
