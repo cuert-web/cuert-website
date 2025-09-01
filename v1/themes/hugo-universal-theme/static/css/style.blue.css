@@ -2706,11 +2706,11 @@ fieldset[disabled] .btn-template-primary.active {
   border-radius: 38px;
 }
 #copyright {
-  background: #000f0e;
-  color: #999999;
+  background: #4044a0;
+  color: #ffffff;
   padding: 18px 0;
   font-size: 12px;
-  border-top: 1px solid #1b1b1b;
+  border-top: 1px solid rgba(0, 0, 0, 0.2); 
 }
 #copyright p {
   margin: 0;
