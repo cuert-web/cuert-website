@@ -9,10 +9,6 @@ head:
   github: https://github.com/Amrhanysayed
   facebook: ""
 members:
-  - name: Ahmed Amr
-    image: /img/ahmed_amr.jpg
-    role: Member
-    email: ahmedamr24680@gmail.com
   - name: Shady Mohammed
     image: /img/shady_mohammed.jpg
     role: Member
