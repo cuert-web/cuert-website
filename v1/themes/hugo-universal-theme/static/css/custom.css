@@ -1,12 +1,50 @@
 .box-image-text .image {
-  height: 215px;
+    height: 215px;
 }
 
 .box-image-text .image img {
-  max-height: 210px;
-  margin: auto;
+    max-height: 210px;
+    margin: auto;
 }
 
 .box-simple {
-  min-height: 230px;
+    min-height: 230px;
+}
+
+
+/* Global brand overrides: gold & black theme */
+
+body {
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+a {
+    color: #d4af37;
+}
+
+a:hover,
+a:focus {
+    color: #e3c45a;
+}
+
+
+/* Buttons generic override if needed */
+
+button,
+.btn-primary,
+.btn,
+.btn-default {
+    background-color: #d4af37;
+    border-color: #b8891b;
+    color: #000;
+}
+
+button:hover,
+.btn-primary:hover,
+.btn:hover,
+.btn-default:hover {
+    background-color: #e3c45a;
+    border-color: #d4af37;
+    color: #000;
 }

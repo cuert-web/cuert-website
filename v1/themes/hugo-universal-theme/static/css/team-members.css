@@ -1,4 +1,6 @@
 /* Reset CSS */
+
+
 /* * {
     margin: 0;
     padding: 0;
@@ -16,22 +18,25 @@ ul {
 a {
     text-decoration: none;
 }
+
 .swipable-buttons {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 
 /* #Electrical, #Web,#Operation ,#LogisticsAndPlanning,#Mechanical,#Autonomous{
     display: none;
   } */
+
 .button-teams button {
-    background-color: #4a50c2;
-    color: #fff;
+    background-color: #d4af37;
+    /* gold */
+    color: #000;
     padding: 1rem;
     border-radius: 35px;
-    border-color: #4a50c2;
+    border-color: #d4af37;
     /* margin-top: 10px; */
     margin-bottom: 10px;
     margin-left: 20px;
@@ -57,11 +62,13 @@ button:hover {
     margin-bottom: 30px;
 }
 
+
 /* body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
   } */
+
 
 /* header {
     width: 100%;
@@ -103,6 +110,7 @@ button:hover {
     }
 }
 
+
 /* main heading of page */
 
 .main-heading {
@@ -117,7 +125,9 @@ button:hover {
     }
 }
 
+
 /* end of main header */
+
 
 /* start of sub teams list  */
 
@@ -166,20 +176,19 @@ button:hover {
 }
 
 .sub-team-list-overflow:hover::-webkit-scrollbar-thumb {
-    background-color: #4a50c2;
+    background-color: #d4af37;
     border-radius: 10px;
 }
 
 .sub-team-list-item {
-    background-color: #4a50c2;
-    color: #fff;
+    background-color: #d4af37;
+    color: #000;
     padding: 1rem;
     border-radius: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     white-space: nowrap;
     cursor: pointer;
-
     text-align: center;
     font-family: "Almarai", Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -199,7 +208,9 @@ button:hover {
     }
 }
 
+
 /* end of sub teams list */
+
 
 /* start of sub team heading */
 
@@ -215,11 +226,13 @@ button:hover {
     }
 }
 
+
 /* end of sub team heading */
+
 
 /* start of sub team description */
 
-.sub-team-p > p {
+.sub-team-p>p {
     color: #555;
     text-align: center;
     font-family: "Sen", Arial, Helvetica, sans-serif;
@@ -227,7 +240,6 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     /* line-height: 40px; */
-
     text-align: center;
     margin-bottom: 50px;
     padding: 0 1rem;
@@ -240,7 +252,9 @@ button:hover {
     }
 }
 
+
 /* end of sub team description */
+
 
 /* start of sub-team head card */
 
@@ -255,14 +269,13 @@ button:hover {
 }
 
 .head-card-title {
-    color: #4a50c2;
+    color: #d4af37;
     text-align: center;
     font-family: "Sen", Arial, Helvetica, sans-serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
     text-align: center;
 }
 
@@ -303,7 +316,6 @@ button:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
     text-align: center;
     margin: 8px auto;
 }
@@ -340,7 +352,9 @@ button:hover {
     object-fit: cover;
 }
 
+
 /* end of sub-team head card */
+
 
 /* start slider */
 
@@ -418,7 +432,7 @@ button:hover {
 }
 
 .member-role {
-    color: #4a50c2;
+    color: #d4af37;
     text-align: center;
     font-family: Sen;
     font-size: 28px;
@@ -429,7 +443,7 @@ button:hover {
 }
 
 .swiper-navBtn {
-    color: #4a50c2;
+    color: #d4af37;
 }
 
 .swiper-navBtn::after,
@@ -446,27 +460,30 @@ button:hover {
 }
 
 .swiper-pagination-bullet {
-    background-color: #4a50c2;
+    background-color: #d4af37;
     opacity: 0.8;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #4a50c2;
+    background-color: #d4af37;
 }
 
 @media screen and (max-width: 767px) {
     .slide-content {
         margin: 0 10px;
     }
-
     .swiper-navBtn {
         display: none;
     }
 }
 
+
 /* end slider */
 
+
 /* select sections that have id attribute */
+
+
 /* section[id] {
     padding: 1rem;
   } */
@@ -480,8 +497,7 @@ button:hover {
 }
 
 .members-title {
-    color: #4a50c2;
-
+    color: #d4af37;
     text-align: center;
     font-family: Sen;
     font-size: 30px;
