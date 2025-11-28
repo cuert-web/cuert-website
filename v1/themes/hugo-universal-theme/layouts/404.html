@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  <head>
-    {{ partial "headers.html" . }}
-    {{ partial "custom_headers.html" . }}
-  </head>
+<head>
+    {{ partial "headers.html" . }} {{ partial "custom_headers.html" . }}
+</head>
 
-  <body>
+<body>
 
     <div id="all" style="
-    background: url('../img/fixed-background-2.jpg');
+    background: url('../img/fixed-background-2.png');
     background-color: #21a99f;
     background-blend-mode: multiply;
     background-size: cover;">
 
-        <div id="content" 
-        style="
+        <div id="content" style="
         height: 100vh;
         display: flex;
         align-items: center;
@@ -29,7 +27,7 @@
                         <h3>{{ i18n "404Message" | markdownify }}</h3>
                         <h4 class="text-muted">{{ i18n "404Error" | markdownify }}</h4>
 
-                        <p class="buttons"><a href="{{ "/" | relURL }}" class="btn btn-template-main"><i class="fas fa-home"></i> {{ i18n "404NavHome" | markdownify }}</a>
+                        <p class="buttons"><a href="{{ " / " | relURL }}" class="btn btn-template-main"><i class="fas fa-home"></i> {{ i18n "404NavHome" | markdownify }}</a>
                         </p>
                     </div>
 
@@ -42,5 +40,6 @@
         <!-- /#content -->
 
     </div>
-  </body>
+</body>
+
 </html>

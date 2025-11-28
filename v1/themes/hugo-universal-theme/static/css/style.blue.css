@@ -2110,7 +2110,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #heading-breadcrumbs {
-    background: url('../img/fixed-background-2.jpg') center center repeat;
+    background: url('../img/fixed-background-2.png') center center repeat;
     padding: 20px 0;
     margin-bottom: 40px;
     padding-top: 103px;
@@ -2172,7 +2172,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .bar.background-image-fixed-2 {
-    background: url('../img/fixed-background-2.jpg') center;
+    background: url('../img/fixed-background-2.png') center;
     background-size: contain;
     background-color: var(--primary-accent);
     background-blend-mode: color-burn;
